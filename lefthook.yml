@@ -1,0 +1,19 @@
+# Git hooks for the spike_ui_lib repo. The library's own lefthook.yml (driverse-ui/lefthook.yml)
+# takes over when driverse-ui is split into its own repository; until then, hooks run from the
+# git root and scope to driverse-ui/ via `root`.
+pre-commit:
+  parallel: true
+  commands:
+    ui-format:
+      root: "driverse-ui/"
+      glob: "*.{js,jsx,ts,tsx,json,md}"
+      run: pnpm exec biome format --write --no-errors-on-unmatched {staged_files}
+      stage_fixed: true
+    ui-lint:
+      root: "driverse-ui/"
+      glob: "*.{js,jsx,ts,tsx}"
+      run: pnpm exec biome lint --no-errors-on-unmatched {staged_files}
+    ui-typecheck:
+      root: "driverse-ui/"
+      glob: "*.{ts,tsx}"
+      run: pnpm exec tsc --noEmit

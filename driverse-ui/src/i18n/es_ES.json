@@ -1,0 +1,712 @@
+{
+	"sys": {
+		"api": {
+			"apiRequestFailed": "La solicitud de la interfaz falló, ¡por favor intente más tarde!",
+			"apiTimeoutMessage": "¡La solicitud de la interfaz ha superado el tiempo, por favor actualice la página e intente nuevamente!",
+			"errMsg401": "¡El usuario no tiene permiso (token, nombre de usuario, contraseña erróneos)!",
+			"errMsg403": "¡El usuario está autorizado, pero el acceso está prohibido!",
+			"errMsg404": "Error de solicitud de red, ¡no se encontró el recurso!",
+			"errMsg405": "Error de solicitud de red, ¡método de solicitud no permitido!",
+			"errMsg408": "¡Se agotó el tiempo de la solicitud de red!",
+			"errMsg500": "Error del servidor, ¡por favor contacte al administrador!",
+			"errMsg501": "¡La red no está implementada!",
+			"errMsg502": "¡Error de red!",
+			"errMsg503": "El servicio no está disponible, el servidor está temporalmente sobrecargado o en mantenimiento!",
+			"errMsg504": "¡Tiempo de espera de la red agotado!",
+			"errMsg505": "¡La versión http no admite la solicitud!",
+			"errorMessage": "¡La operación falló, el sistema está anómalo!",
+			"errorTip": "Consejo de error",
+			"networkException": "Anomalía de red",
+			"networkExceptionMsg": "¡Por favor verifique si su conexión a la red es normal! La red está anómala",
+			"operationFailed": "Operación fallida",
+			"operationSuccess": "Operación exitosa",
+			"successTip": "Consejo de éxito",
+			"timeoutMessage": "¡Se agotó el tiempo de inicio de sesión, por favor inicie sesión nuevamente!"
+		},
+		"dashboard": {
+			"cards": {
+				"benefit": {
+					"description": "beneficios vehiculares",
+					"title": "Beneficios"
+				},
+				"fleet": {
+					"description": "total de grupos",
+					"title": "Flotillas"
+				},
+				"users": {
+					"description": "Usuarios activos",
+					"title": "Usuarios"
+				},
+				"vehicles": {
+					"description": "en  parque vehicular",
+					"title": "Vehículos"
+				}
+			},
+			"charts": {
+				"compliance": {
+					"labels": {
+						"compliant": "Cumple",
+						"immediate_action": "Acción Inmediata",
+						"needs_attention": "Necesita Atención"
+					},
+					"title": "Estado de Cumplimiento"
+				},
+				"insurance": {
+					"categories": {
+						"active": "Activo",
+						"expired": "Vencido",
+						"expiring": "Por Vencer",
+						"missing": "Faltante"
+					},
+					"title": "Estado de Seguros",
+					"yaxis_title": "Seguros"
+				}
+			}
+		},
+		"docs": "Documento",
+		"documents": {
+			"features": {
+				"batch": {
+					"description": "Carga hasta 20 documentos a la vez para extracción automática de OCR",
+					"title": "Procesamiento por Lotes"
+				},
+				"supported": {
+					"description": "Cumplimiento vehicular, seguros, licencias de conducir, contratos y documentos generales",
+					"title": "Documentos Soportados"
+				},
+				"validation": {
+					"description": "Revisa y confirma los datos extraídos antes de guardar en los registros vehiculares",
+					"title": "Validación Inteligente"
+				}
+			},
+			"howItWorks": {
+				"step1": {
+					"description": "Carga tus documentos de cumplimiento arrastrándolos y soltándolos o navegando tus archivos",
+					"title": "Carga tus documentos"
+				},
+				"step2": {
+					"description": "Nuestra tecnología OCR extrae automáticamente información clave de cada documento",
+					"title": "Extracción automática"
+				},
+				"step3": {
+					"description": "Revisa los datos extraídos, asígnalosy a vehículos, y confirma para guardar todos los registros a la vez",
+					"title": "Revisa y confirma"
+				},
+				"title": "Cómo funciona"
+			},
+			"inbox": {
+				"description": "Carga y procesa documentos de cumplimiento en lote",
+				"title": "Bandeja de Documentos"
+			},
+			"tabs": {
+				"completedUploads": "Cargas Completadas",
+				"initialUpload": "Carga Inicial",
+				"pendingUploads": "Cargas Pendientes"
+			},
+			"upload": {
+				"browse": "explora",
+				"fileLimit": "Carga hasta 20 archivos (JPG, PNG, PDF • Máx 10MB cada uno)",
+				"subtitle": "Suelta documentos aquí o"
+			}
+		},
+		"forms": {
+			"addCirculation": {
+				"cancel": "Cancelar",
+				"cardDetails": "Detalles de la Tarjeta",
+				"cardNumber": "Número de Tarjeta",
+				"cardNumberPlaceholder": "Ingresa el Número de Tarjeta",
+				"description": "Elige cómo deseas agregar la tarjeta de circulación",
+				"enterCardNumber": "Por favor ingresa un número de tarjeta",
+				"expiryAfterIssue": "La fecha de vencimiento debe ser posterior a la fecha de emisión",
+				"expiryDate": "Fecha de Vencimiento",
+				"failedToAdd": "Error al agregar la tarjeta de circulación",
+				"issueDate": "Fecha de Emisión",
+				"permanentCard": "Tarjeta Permanente",
+				"saveCard": "Guardar Tarjeta",
+				"selectExpiryDate": "¡Por favor selecciona la fecha de vencimiento!",
+				"selectIssueDate": "¡Por favor selecciona la fecha de emisión!",
+				"title": "Agregar Tarjeta de Circulación"
+			},
+			"addPollutionTest": {
+				"cancel": "Cancelar",
+				"description": "Elige cómo deseas agregar el pago de contaminación",
+				"hologram": "Holograma",
+				"hologramPlaceholder": "Seleccionar Holograma",
+				"selectHologram": "¡Por favor selecciona un holograma!",
+				"selectTestDate": "¡Por favor selecciona la fecha de prueba!",
+				"submitTest": "Enviar Prueba",
+				"testDate": "Fecha de Prueba",
+				"title": "Agregar Prueba de Contaminación"
+			},
+			"addReferendum": {
+				"amountPaid": "Monto pagado",
+				"amountRequired": "¡El monto es requerido!",
+				"cancel": "Cancelar",
+				"description": "Elige cómo deseas agregar el pago del Refrendo",
+				"enterAmount": "Ingresa el monto",
+				"fiscalYear": "Año Fiscal",
+				"paymentDate": "Fecha de Pago",
+				"paymentDetails": "Detalles del Pago",
+				"selectDate": "¡Por favor selecciona la fecha de pago!",
+				"selectYear": "¡Por favor selecciona un año!",
+				"submit": "Enviar",
+				"title": "Agregar Pago de Refrendo"
+			},
+			"addTenure": {
+				"amountPaid": "Monto pagado",
+				"amountRequired": "¡El monto es requerido!",
+				"cancel": "Cancelar",
+				"description": "Elige cómo deseas agregar el pago de tenencia",
+				"enterAmount": "Ingresa el monto",
+				"fiscalYear": "Año Fiscal",
+				"paymentDate": "Fecha de Pago",
+				"paymentDetails": "Detalles del Pago",
+				"selectDate": "¡Por favor selecciona la fecha de pago!",
+				"selectYear": "¡Por favor selecciona un año!",
+				"submit": "Enviar",
+				"title": "Agregar Pago de Tenencia"
+			},
+			"additionalInfo": {
+				"links": {
+					"cdmxCenter": {
+						"sub": "Encuentra los centros de verificación autorizados en Ciudad de México",
+						"title": "Centro de Verificación CDMX"
+					},
+					"estadoMexico": {
+						"sub": "Información de verificación del Estado de México",
+						"title": "Verificación Estado de México"
+					},
+					"generalGuide": {
+						"sub": "Información de verificación del Estado de México",
+						"title": "Guía General de Verificación"
+					}
+				},
+				"sections": {
+					"links": "Enlaces Importantes",
+					"notes": "Notas Importantes"
+				},
+				"title": "Información Adicional"
+			},
+			"circulation": {
+				"addCirculationCard": "Agregar Tarjeta de Circulación",
+				"expired": "Vencida",
+				"missing": "Faltante",
+				"renewalRequired": "Renovación Requerida",
+				"statusMessage": "Tarjeta de circulación {{status}}.",
+				"statusTitle": "Estado de Tarjeta de Circulación"
+			},
+			"circulationHistory": {
+				"cardNumber": "Número de Tarjeta",
+				"expirationDate": "Fecha de Vencimiento",
+				"files": "Archivos",
+				"issueDate": "Fecha de Emisión",
+				"notAvailable": "N/D",
+				"status": "Estado",
+				"title": "Historial de Tarjetas"
+			},
+			"compliance": {
+				"circulation": "Circulación",
+				"tenure": "Tenencia",
+				"vehicleVerification": "Verificación del Vehículo"
+			},
+			"currentCirculationCard": {
+				"attachments": "Adjuntos",
+				"cardNumber": "Número de Tarjeta",
+				"expirationDate": "Fecha de Vencimiento",
+				"issueDate": "Fecha de Emisión",
+				"notAvailable": "N/D",
+				"status": "Estado",
+				"title": "Tarjeta Actual",
+				"view": "Ver"
+			},
+			"insurance": {
+				"history": "Historial",
+				"overview": "Resumen",
+				"policyholder": {
+					"address": "Dirección",
+					"name": "Nombre del Titular",
+					"rfc": "RFC",
+					"title": "Información del Titular de la Póliza"
+				}
+			},
+			"insuranceOverview": {
+				"addInsurancePolicy": "Agregar Póliza de Seguro"
+			},
+			"insuranceStatus": {
+				"addPolicy": "Agregar Póliza de Seguro",
+				"daysLeft": "{{days}} día restante",
+				"daysLeftPlural": "{{days}} días restantes",
+				"expired": "Póliza de Seguro Vencida",
+				"expiredText": "Vencida",
+				"expiresOn": "La póliza vence el {{date}} — {{daysText}}",
+				"missing": "Faltante",
+				"nextRenewal": "Fecha de próxima renovación: {{date}}",
+				"title": "Estado del Seguro"
+			},
+			"latestVerification": {
+				"attachments": "Adjuntos",
+				"clickToView": "Haga clic para ver",
+				"fields": {
+					"Hologram": "Holograma",
+					"License Plate": "Matrícula",
+					"Result": "Resultado",
+					"Valid Until": "Válido Hasta",
+					"Verification Center": "Centro de Verificación",
+					"Verification Date": "Fecha de Verificación",
+					"Verification Sticker": "Pegatina de Verificación"
+				},
+				"na": "No disponible",
+				"title": "Última Verificación"
+			},
+			"maintenance": {
+				"carIssues": "Problemas del Vehículo",
+				"carIssuesTable": {
+					"actions": "Acciones",
+					"issue": "Problema",
+					"priority": "Prioridad",
+					"reported": "Reportado",
+					"status": "Estado"
+				},
+				"history": "Historial",
+				"historyTable": {
+					"actions": "Acciones",
+					"cost": "Costo",
+					"date": "Fecha",
+					"mileage": "Kilometraje",
+					"provider": "Proveedor",
+					"service": "Servicio",
+					"source": "Fuente",
+					"status": "Estado"
+				},
+				"overview": "Resumen",
+				"overviewSection": {
+					"activeSchedules": "Programaciones de Mantenimiento Activas",
+					"cost": "Costo",
+					"date": "Fecha",
+					"lastCompleted": "Último Servicio Completado",
+					"nextScheduled": "Próximo Servicio Programado",
+					"noCompletedServices": "Sin servicios completados",
+					"noUpcomingServices": "Sin servicios próximos",
+					"provider": "Proveedor",
+					"recentActivity": "Actividad de Mantenimiento Reciente"
+				},
+				"services": "Servicios",
+				"servicesTable": {
+					"actions": "Acciones",
+					"cost": "Costo",
+					"createRecurrence": "Crear Recurrencia",
+					"inProgressUpcoming": "Servicios en Progreso y Próximos",
+					"provider": "Proveedor",
+					"recurrenceServices": "Servicios Recurrentes",
+					"scheduleService": "Programar Servicio",
+					"scheduledDate": "Fecha Programada",
+					"service": "Servicio",
+					"status": "Estado"
+				}
+			},
+			"ownership": {
+				"addRenewalFee": "Agregar Pago de Refrendo",
+				"addTenure": "Agregar Pago de Tenencia",
+				"allPaidMessage": "Todas las tarifas de propiedad requeridas están al día",
+				"companyOwned": "Auto registrado a nombre de una empresa",
+				"companyOwnedDesc": "La tenencia y el refrendo son obligatorios independientemente de las reglas estatales",
+				"missingPayments": "Faltan algunos pagos de tarifas de propiedad requeridos ( {{refYears}} Refrendo y {{tenureYears}} pagos de Tenencia faltantes ).",
+				"renewalFee": "Refrendo",
+				"tenure": "Tenencia",
+				"title": "Estado de Tarifa de Propiedad"
+			},
+			"ownershipHistory": {
+				"amount": "Monto",
+				"files": "Archivos",
+				"fiscalYear": "Año Fiscal",
+				"notAvailable": "N/D",
+				"paymentDate": "Fecha de Pago",
+				"renewalFee": "REFRENDO",
+				"tenure": "TENENCIA",
+				"title": "Historial de Pagos",
+				"type": "Tipo"
+			},
+			"paymentHistory": {
+				"exempt": "Exento",
+				"noPayment": "Sin Pago",
+				"notPaid": "No Pagado",
+				"paid": "Pagado",
+				"renewalFee": "Refrendo",
+				"tenure": "Tenencia",
+				"title": "Pagos",
+				"year": "Año"
+			},
+			"policyInformation": {
+				"attachments": "Adjuntos",
+				"coverageEndDate": "Fecha de Fin de Cobertura",
+				"coverageStartDate": "Fecha de Inicio de Cobertura",
+				"insuranceCompany": "Compañía de Seguros",
+				"item": "Artículo",
+				"notAvailable": "N/D",
+				"policyIssueDate": "Fecha de Emisión de Póliza",
+				"policyNumber": "Número de Póliza",
+				"title": "Información de la Póliza",
+				"view": "Ver"
+			},
+			"pollutionTest": {
+				"addVoluntaryTest": "Agregar Prueba de Verificación",
+				"compliant": "Cumple",
+				"currentTest": "La prueba de contaminación está vigente. Vence en {{days}} días",
+				"expired": "Pollution test expired ",
+				"expiredMessage": "Pollution test has expired",
+				"expiresIn": "Expires in {{days}} days",
+				"nextTest": "Próxima prueba programada: {{date}}",
+				"status": "Estado de la Prueba de Contaminación"
+			},
+			"reminders": {
+				"labels": {
+					"additionalReminders": "Recordatorios adicionales",
+					"email": "Notificaciones por correo electrónico",
+					"halfPeriod": "A la mitad del período de verificación",
+					"notificationMethod": "Método de notificación",
+					"remindBefore": "Recordar antes de la expiración",
+					"sms": "Notificaciones por SMS",
+					"startPeriod": "Al inicio del período de verificación"
+				},
+				"title": "Recordatorios de Verificación"
+			},
+			"vehicle": {
+				"activeBenefits": "Beneficios activos",
+				"activeBenefitsDesc": "Beneficios activos actuales.",
+				"add_new_vehicle": "Agregar Vehiculo",
+				"alias": "Alias",
+				"assignDriver": "Asignar conductor",
+				"assignFleet": "Asignar flota",
+				"assignedDriver": "Conductor asignado",
+				"assignedDriverDesc": "Conductor asignado a este vehículo.",
+				"car_type": {
+					"convertible": "Convertible",
+					"coupe": "Coupé",
+					"electric": "Eléctrico",
+					"hatchback": "Hatchback",
+					"hybrid": "Híbrido",
+					"minivan": "Minivan",
+					"pickup": "Pickup",
+					"sedan": "Sedán",
+					"sport": "Deportivo",
+					"suv": "SUV",
+					"van": "Van",
+					"wagon": "Familiar"
+				},
+				"color": "Color",
+				"colors": {
+					"atomic_silver": "Plata Atómica",
+					"black": "Negro",
+					"blue": "Azul",
+					"brilliant_red": "Rojo Brillante",
+					"brilliant_silver": "Plata Brillante",
+					"brilliant_white": "Blanco Brillante",
+					"brown": "Marrón",
+					"burgundy": "Burdeos",
+					"burgundy_red": "Rojo Burdeos",
+					"caviar": "Caviar",
+					"ceramic_metallic": "Cerámico Metálico",
+					"champagne": "Champagne",
+					"cloudburst_gray": "Gris Nube de Tormenta",
+					"deep_navy_blue": "Azul Marino Profundo",
+					"denim_blue": "Azul Denim",
+					"glacier_white": "Blanco Glaciar",
+					"gray": "Gris",
+					"green": "Verde",
+					"imperial_blue": "Azul Imperial",
+					"iron_grey": "Gris Hierro",
+					"jet_black_mica": "Negro Azabache Mica",
+					"machine_gray_metallic": "Gris Máquina Metálico",
+					"merlot_red": "Rojo Merlot",
+					"metallic_floret_silver": "Plata Florete Metalizado",
+					"metallic_glacier_white": "Blanco Glaciar Metalizado",
+					"metallic_manhattan_gray": "Gris Manhattan Metalizado",
+					"metallic_myth_black": "Negro Mito Metalizado",
+					"metallic_nano_gray": "Gris Nano Metalizado",
+					"metallic_navarra_blue": "Azul Navarra Metalizado",
+					"metallic_red": "Rojo Metálico",
+					"meteor_gray": "Gris Meteoro",
+					"nori_green": "Verde Nori",
+					"orange": "Naranja",
+					"oxford_gray": "Gris Oxford",
+					"pearl_white": "Blanco Perlado",
+					"pearl_white_alt": "Blanco Perla",
+					"platinum_white": "Blanco Platino",
+					"polymetal_gray": "Gris Polimetálico",
+					"polymetal_gray_metallic": "Gris Polimetálico Metálico",
+					"purple": "Morado (Violeta)",
+					"red": "Rojo",
+					"rhodium_white_metallic": "Blanco Rodio Metálico",
+					"sapphire_blue": "Azul Zafiro",
+					"satin_white": "Blanco Satinado",
+					"silky_silver": "Plata Sedosa",
+					"silver": "Plata",
+					"snow_white_pearl": "Blanco Perla Nieve",
+					"solar_orange": "Naranja Solar",
+					"sonic_silver": "Plata Sónico",
+					"soul_red_crystal_metallic": "Rojo Alma Cristal Metálico",
+					"steel": "Acero",
+					"titanium_gray": "Gris Titanio",
+					"volcanic_gray": "Gris Volcánico",
+					"white": "Blanco",
+					"wind_chill_pearl": "Perla Viento Frío",
+					"yellow": "Amarillo"
+				},
+				"editing": "Editando información",
+				"editingProperties": "Editando propiedades",
+				"fleetAssignments": "Asignaciones de flota",
+				"fleetAssignmentsDesc": "Flota asignada a este vehículo.",
+				"generalInfo": "Información general",
+				"leasing_company": "Arrendadora",
+				"make": "Marca",
+				"model": "Modelo",
+				"ownership": "Propiedad",
+				"plate": "Placa",
+				"price": "Precio",
+				"properties": "Propiedades",
+				"purchase_type": "Tipo de compra",
+				"state": "Estado",
+				"type": "Tipo de vehiculo",
+				"vehicle_management": "Gestión de vehículos",
+				"version": "Version",
+				"vin": "Numero de serie",
+				"year": "Año"
+			},
+			"vehicleDetails": {
+				"model": "Modelo",
+				"tabs": {
+					"compliance": "Cumplimiento",
+					"info": "Información",
+					"insurance": "Seguro",
+					"maintenance": "Mantenimiento",
+					"netO2": "Net O2",
+					"telemetry": "Telemetría"
+				},
+				"title": "Detalles del Vehículo",
+				"year": "Año"
+			},
+			"vehicleInfo": {
+				"tabs": {
+					"details": "Detalles",
+					"documents": "Documentos",
+					"images": "Imágenes"
+				}
+			},
+			"vehicles": {
+				"description": "Administra tu flota de vehículos y rastrea el estado de cumplimiento.",
+				"title": "Vehículos"
+			},
+			"vehiclesTable": {
+				"actions": "Acciones",
+				"addVehicle": "Agregar Vehículo",
+				"alias": "Alias",
+				"complete": "Completo",
+				"export": "Exportar",
+				"inProcurement": "En Adquisición",
+				"incomplete": "Incompleto",
+				"make": "Marca",
+				"makeModel": "Marca/Modelo",
+				"model": "Modelo",
+				"plateNumber": "Número de Placa",
+				"searchPlaceholder": "Buscar vehículos...",
+				"state": "Estado",
+				"status": "Estatus",
+				"vin": "VIN",
+				"year": "Año"
+			},
+			"verificationHistory": {
+				"columns": {
+					"center": "Centro",
+					"date": "Fecha",
+					"files": "Archivos",
+					"hologram": "Holograma",
+					"result": "Resultado",
+					"status": "Estado",
+					"validUntil": "Válido Hasta"
+				},
+				"title": "Historial de Verificación"
+			}
+		},
+		"login": {
+			"accountPlaceholder": "Por favor ingrese el nombre de usuario",
+			"backSignIn": "Volver a iniciar sesión",
+			"confirmPassword": "Confirmar contraseña",
+			"confirmPasswordPlaceholder": "Por favor ingrese la confirmación de la contraseña",
+			"diffPwd": "Las contraseñas no coinciden",
+			"email": "Correo electrónico",
+			"emaildPlaceholder": "Por favor ingrese el correo electrónico",
+			"forgetFormSecondTitle": "Por favor ingrese la dirección de correo electrónico asociada con su cuenta y le enviaremos un enlace para restablecer su contraseña.",
+			"forgetFormTitle": "Restablecer contraseña",
+			"forgetPassword": "¿Olvidó su contraseña?",
+			"loginButton": "Iniciar Sesión",
+			"loginSuccessDesc": "Bienvenido de nuevo",
+			"loginSuccessTitle": "Inicio de sesión exitoso",
+			"loginWelcomeMessage": "Optimiza tus arrendaminetos, simplifica tu negocio.",
+			"logout": "Cerrar sesión",
+			"mobile": "Móvil",
+			"mobilePlaceholder": "Por favor ingrese el número móvil",
+			"mobileSignInFormTitle": "Iniciar sesión móvil",
+			"otherSignIn": "Iniciar sesión con",
+			"password": "Contraseña",
+			"passwordPlaceholder": "Por favor ingrese la contraseña",
+			"policy": "Acepto la Política de privacidad de xxx",
+			"policyPlaceholder": "Regístrese después de revisar",
+			"privacyPolicy": "Política de privacidad",
+			"qrSignInFormTitle": "Iniciar sesión con código QR",
+			"registerAndAgree": "Al registrarse, acepto los",
+			"registerButton": "Registrarse",
+			"rememberMe": "Recuérdame",
+			"scanSign": "Escaneando el código para completar el inicio de sesión",
+			"sendEmailButton": "Enviar correo electrónico",
+			"sendSmsButton": "Enviar código SMS",
+			"sendSmsText": "Recuperar en {{second}}s",
+			"signInDesc": "¡Ingrese sus datos personales y comience!",
+			"signInFormTitle": "Iniciar sesión",
+			"signInPrimaryTitle": "Hola, bienvenido de nuevo",
+			"signInSecondTitle": "Sistema de gestión del backend",
+			"signUpFormTitle": "Registrarse",
+			"smsCode": "Código SMS",
+			"smsPlaceholder": "Por favor ingrese el código SMS",
+			"termsOfService": "Términos del servicio",
+			"userName": "Nombre de usuario"
+		},
+		"menu": {
+			"analysis": "Análisis",
+			"animate": "Animar",
+			"blank": "En blanco",
+			"blog": "Blog",
+			"calendar": "Calendario",
+			"calendars": "Calendario",
+			"chart": "Gráfico",
+			"clipboard": "Portapapeles",
+			"components": "Componentes",
+			"credit": {
+				"credit_lines": "Líneas de crédito",
+				"financial_conditions": "¡¡¡Condiciones financieras",
+				"index": "Crédito"
+			},
+			"crm": {
+				"clients": "Clientes",
+				"index": "CRM",
+				"pipelines": "Flujos de trabajo"
+			},
+			"dashboard": "Inicio",
+			"disabled": "Elemento deshabilitado",
+			"documents": {
+				"esignature": "Esignaturas",
+				"index": "Documentos"
+			},
+			"editor": "Editor",
+			"error": {
+				"403": "403",
+				"404": "404",
+				"500": "500",
+				"index": "Página de error"
+			},
+			"external_link": "Enlace externo",
+			"fleet": {
+				"compliance": "Regulacion",
+				"index": "Parque Vehicular",
+				"insurance": "Seguros",
+				"maintenance": "Mantenimiento",
+				"telemetry": "Telemática",
+				"vehicles": "Vehículos"
+			},
+			"frame": "Elemento externo",
+			"functions": "Funciones",
+			"i18n": "Multi idioma",
+			"icon": "Icono",
+			"iframe": "Iframe",
+			"insights": "Indicadores",
+			"kanban": "Kanban",
+			"label": "Etiqueta del elemento",
+			"leases": {
+				"all": "Todos",
+				"arrears": "Atrasados",
+				"due": "Vencidos",
+				"index": "Arrendamientos",
+				"maturity": "Vencimiento"
+			},
+			"legal": {
+				"index": "Legal",
+				"legal_entities": "Entidades Registradas"
+			},
+			"management": "Gestión",
+			"markdown": "Markdown",
+			"menulevel": {
+				"1a": "Nivel de menú 1a",
+				"1b": {
+					"2a": "Nivel de menú 2a",
+					"2b": {
+						"3a": "Nivel de menú 3a",
+						"3b": "Nivel de menú 3b",
+						"index": "Nivel de menú 2b"
+					},
+					"index": "Nivel de menú 1b"
+				},
+				"index": "Nivel de menú"
+			},
+			"scroll": "Desplazar",
+			"system": {
+				"index": "Sistema",
+				"organization": "Organización",
+				"permission": "Permiso",
+				"role": "Rol",
+				"user": "Usuario",
+				"user_detail": "Detalle del usuario"
+			},
+			"toast": "Toast",
+			"token_expired": "Token expirado",
+			"upload": "Subir",
+			"user": {
+				"account": "Cuenta",
+				"index": "Usuario",
+				"profile": "Perfil"
+			},
+			"workbench": "Mesa de trabajo"
+		},
+		"modal": {
+			"accountExist": "La cuenta ya existe en Driverse",
+			"accountExistMsg": "Para gestionar los autos de esta cuenta desde Autocredit, el cliente debe autorizar desde Driverse.",
+			"action": {
+				"add": "Agregar",
+				"cancel": "Cancelar",
+				"close": "Cerrar",
+				"confirm": "Confirmar",
+				"delete": "Eliminar",
+				"edit": "Editar",
+				"save": "Guardar",
+				"update": "Actualizar"
+			},
+			"cancelMsg": "Ya completaste algunos campos. Si cancelas, se perderá la información.",
+			"cancelTitle": "¿Estás seguro de que deseas cancelar?",
+			"emailVerify": "Escribe el correo electrónico del cliente. Autocredit verificará si la cuenta ya existe en Driverse.",
+			"goBack": "Regresar",
+			"new_client": "Nuevo cliente",
+			"sendRequest": "Enviar solicitud",
+			"verify": "Verificar"
+		},
+		"tab": {
+			"close": "Cerrar",
+			"closeAll": "Cerrar todo",
+			"closeLeft": "Cerrar a la izquierda",
+			"closeOthers": "Cerrar otros",
+			"closeRight": "Cerrar a la derecha",
+			"fullscreen": "Pantalla completa",
+			"refresh": "Actualizar"
+		},
+		"uploadCompliance": {
+			"cancel": "Cancelar",
+			"change": "Cambiar",
+			"clickUpload": "Haz clic para subir o arrastra y suelta",
+			"fileFormats": "PDF, JPG, o PNG (máx 10MB)",
+			"processDocument": "Procesar Documento"
+		},
+		"uploadDocument": {
+			"cancel": "Cancelar",
+			"change": "Cambiar",
+			"clickUpload": "Haz clic para subir o arrastra y suelta",
+			"fileFormats": "PDF, JPG, o PNG (máx 10MB)"
+		}
+	}
+}

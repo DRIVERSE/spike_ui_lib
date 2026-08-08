@@ -1,0 +1,14 @@
+# Active hooks (the app repos ship this file fully commented out — here it runs).
+pre-commit:
+  parallel: true
+  commands:
+    format:
+      glob: "*.{js,jsx,ts,tsx,json,md}"
+      run: pnpm exec biome format --write --no-errors-on-unmatched {staged_files}
+      stage_fixed: true
+    lint:
+      glob: "*.{js,jsx,ts,tsx}"
+      run: pnpm exec biome lint --no-errors-on-unmatched {staged_files}
+    typecheck:
+      glob: "*.{ts,tsx}"
+      run: pnpm exec tsc --noEmit

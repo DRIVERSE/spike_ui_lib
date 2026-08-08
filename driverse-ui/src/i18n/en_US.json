@@ -1,0 +1,712 @@
+{
+	"sys": {
+		"api": {
+			"apiRequestFailed": "The interface request failed, please try again later!",
+			"apiTimeoutMessage": "The interface request timed out, please refresh the page and try again!",
+			"errMsg401": "The user does not have permission (token, user name, password error)!",
+			"errMsg403": "The user is authorized, but access is forbidden!",
+			"errMsg404": "Network request error, the resource was not found!",
+			"errMsg405": "Network request error, request method not allowed!",
+			"errMsg408": "Network request timed out!",
+			"errMsg500": "Server error, please contact the administrator!",
+			"errMsg501": "The network is not implemented!",
+			"errMsg502": "Network Error!",
+			"errMsg503": "The service is unavailable, the server is temporarily overloaded or maintained!",
+			"errMsg504": "Network timeout!",
+			"errMsg505": "The http version does not support the request!",
+			"errorMessage": "The operation failed, the system is abnormal!",
+			"errorTip": "Error Tip",
+			"networkException": "network anomaly",
+			"networkExceptionMsg": "Please check if your network connection is normal! The network is abnormal",
+			"operationFailed": "Operation failed",
+			"operationSuccess": "Operation Success",
+			"successTip": "Success Tip",
+			"timeoutMessage": "Login timed out, please log in again!"
+		},
+		"dashboard": {
+			"cards": {
+				"benefit": {
+					"description": "vehicle benefits",
+					"title": "Benefit"
+				},
+				"fleet": {
+					"description": "total groups",
+					"title": "Fleet"
+				},
+				"users": {
+					"description": "active personnel",
+					"title": "Users"
+				},
+				"vehicles": {
+					"description": "in vehicle park",
+					"title": "Vehicles"
+				}
+			},
+			"charts": {
+				"compliance": {
+					"labels": {
+						"compliant": "Compliant",
+						"immediate_action": "Immediate Action",
+						"needs_attention": "Needs Attention"
+					},
+					"title": "Compliance"
+				},
+				"insurance": {
+					"categories": {
+						"active": "Active",
+						"expired": "Expired",
+						"expiring": "Expiring",
+						"missing": "Missing"
+					},
+					"title": "Insurance",
+					"yaxis_title": "Insurance"
+				}
+			}
+		},
+		"docs": "Document",
+		"documents": {
+			"features": {
+				"batch": {
+					"description": "Upload up to 20 documents at once for automatic OCR extraction",
+					"title": "Batch Processing"
+				},
+				"supported": {
+					"description": "Vehicle compliance, insurance, driver licenses, contracts, and general documents",
+					"title": "Supported Documents"
+				},
+				"validation": {
+					"description": "Review and confirm extracted data before saving to vehicle records",
+					"title": "Smart Validation"
+				}
+			},
+			"howItWorks": {
+				"step1": {
+					"description": "Upload your compliance documents by dragging and dropping or browsing your files",
+					"title": "Upload your documents"
+				},
+				"step2": {
+					"description": "Our OCR technology automatically extracts key information from each document",
+					"title": "Automatic extraction"
+				},
+				"step3": {
+					"description": "Review the extracted data, assign to vehicles, and confirm to save all records at once",
+					"title": "Review and confirm"
+				},
+				"title": "How it works"
+			},
+			"inbox": {
+				"description": "Upload and process compliance documents in bulk",
+				"title": "Document Inbox"
+			},
+			"tabs": {
+				"completedUploads": "Confirmed uploads",
+				"initialUpload": "Initial upload",
+				"pendingUploads": "Pending uploads"
+			},
+			"upload": {
+				"browse": "browse",
+				"fileLimit": "Upload up to 20 files (JPG, PNG, PDF • Max 10MB each)",
+				"subtitle": "Drop documents here or"
+			}
+		},
+		"forms": {
+			"addCirculation": {
+				"cancel": "Cancel",
+				"cardDetails": "Card Details",
+				"cardNumber": "Card Number",
+				"cardNumberPlaceholder": "Enter Card Number",
+				"description": "Choose how you'd like to add the circulation card",
+				"enterCardNumber": "Please enter a card number",
+				"expiryAfterIssue": "Expiry date must be after the issue date",
+				"expiryDate": "Expiry Date",
+				"failedToAdd": "Failed to add circulation card",
+				"issueDate": "Issue Date",
+				"permanentCard": "Permanent Card",
+				"saveCard": "Save Card",
+				"selectExpiryDate": "Please select the expiry date!",
+				"selectIssueDate": "Please select the issue date!",
+				"title": "Add Circulation Card"
+			},
+			"addPollutionTest": {
+				"cancel": "Cancel",
+				"description": "Choose how you'd like to add the pollution payment",
+				"hologram": "Hologram",
+				"hologramPlaceholder": "Select Hologram",
+				"selectHologram": "Please select hologram!",
+				"selectTestDate": "Please select the test date!",
+				"submitTest": "Submit Test",
+				"testDate": "Test Date",
+				"title": "Add Pollution Test"
+			},
+			"addReferendum": {
+				"amountPaid": "Amount paid",
+				"amountRequired": "Amount is required!",
+				"cancel": "Cancel",
+				"description": "Choose how you'd like to add the Renewal Fee payment",
+				"enterAmount": "Enter amount",
+				"fiscalYear": "Fiscal Year",
+				"paymentDate": "Payment Date",
+				"paymentDetails": "Payment Details",
+				"selectDate": "Please select the test date!",
+				"selectYear": "Please select a year!",
+				"submit": "Submit",
+				"title": "Add Renewal Fee Payment"
+			},
+			"addTenure": {
+				"amountPaid": "Amount paid",
+				"amountRequired": "Amount is required!",
+				"cancel": "Cancel",
+				"description": "Choose how you'd like to add the tenure payment",
+				"enterAmount": "Enter amount",
+				"fiscalYear": "Fiscal Year",
+				"paymentDate": "Payment Date",
+				"paymentDetails": "Payment Details",
+				"selectDate": "Please select the test date!",
+				"selectYear": "Please select a year!",
+				"submit": "Submit",
+				"title": "Add Tenure Payment"
+			},
+			"additionalInfo": {
+				"links": {
+					"cdmxCenter": {
+						"sub": "Find authorized verification centers in Mexico City",
+						"title": "CDMX Verification Center"
+					},
+					"estadoMexico": {
+						"sub": "State of Mexico verification information",
+						"title": "Estado de Mexico Verification"
+					},
+					"generalGuide": {
+						"sub": "State of Mexico verification information",
+						"title": "General Verification Guide"
+					}
+				},
+				"sections": {
+					"links": "Important Links",
+					"notes": "Important Notes"
+				},
+				"title": "Additional Information"
+			},
+			"circulation": {
+				"addCirculationCard": "Add Circulation Card",
+				"expired": "Expired",
+				"missing": "Missing",
+				"renewalRequired": "Renewal Required",
+				"statusMessage": "Circulation card {{status}}.",
+				"statusTitle": "Circulation Card Status"
+			},
+			"circulationHistory": {
+				"cardNumber": "Card Number",
+				"expirationDate": "Expiration Date",
+				"files": "File",
+				"issueDate": "Issue Date",
+				"notAvailable": "N/A",
+				"status": "Status",
+				"title": "Card History"
+			},
+			"compliance": {
+				"circulation": "Circulation",
+				"tenure": "Tenure",
+				"vehicleVerification": "Vehicle Verification"
+			},
+			"currentCirculationCard": {
+				"attachments": "Attachments",
+				"cardNumber": "Card Number",
+				"expirationDate": "Expiration Date",
+				"issueDate": "Issue Date",
+				"notAvailable": "N/A",
+				"status": "Status",
+				"title": "Current Card",
+				"view": "View"
+			},
+			"insurance": {
+				"history": "History",
+				"overview": "Overview",
+				"policyholder": {
+					"address": "Address",
+					"name": "Policyholder Name",
+					"rfc": "RFC",
+					"title": "Policyholder Information"
+				}
+			},
+			"insuranceOverview": {
+				"addInsurancePolicy": "Add Insurance Policy"
+			},
+			"insuranceStatus": {
+				"addPolicy": "Add Insurance Policy",
+				"daysLeft": "{{days}} day left",
+				"daysLeftPlural": "{{days}} days left",
+				"expired": "Insurance Policy Expired",
+				"expiredText": "Expired",
+				"expiresOn": "Policy expires on {{date}} — {{daysText}}",
+				"missing": "Missing",
+				"nextRenewal": "Next renewal date: {{date}}",
+				"title": "Insurance"
+			},
+			"latestVerification": {
+				"attachments": "Attachments",
+				"clickToView": "Click to view",
+				"fields": {
+					"Hologram": "Hologram",
+					"License Plate": "License Plate",
+					"Result": "Result",
+					"Valid Until": "Valid Until",
+					"Verification Center": "Verification Center",
+					"Verification Date": "Verification Date",
+					"Verification Sticker": "Verification Sticker"
+				},
+				"na": "N/A",
+				"title": "Latest Verification"
+			},
+			"maintenance": {
+				"carIssues": "Car Issues",
+				"carIssuesTable": {
+					"actions": "Actions",
+					"issue": "Issue",
+					"priority": "Priority",
+					"reported": "Reported",
+					"status": "Status"
+				},
+				"history": "History",
+				"historyTable": {
+					"actions": "Actions",
+					"cost": "Cost",
+					"date": "Date",
+					"mileage": "Mileage",
+					"provider": "Provider",
+					"service": "Service",
+					"source": "Source",
+					"status": "Status"
+				},
+				"overview": "Overview",
+				"overviewSection": {
+					"activeSchedules": "Active Maintenance Schedules",
+					"cost": "Cost",
+					"date": "Date",
+					"lastCompleted": "Last Completed Service",
+					"nextScheduled": "Next Scheduled Service",
+					"noCompletedServices": "No completed services",
+					"noUpcomingServices": "No upcoming services",
+					"provider": "Provider",
+					"recentActivity": "Recent Maintenance Activity"
+				},
+				"services": "Services",
+				"servicesTable": {
+					"actions": "Actions",
+					"cost": "Cost",
+					"createRecurrence": "Create Recurrence",
+					"inProgressUpcoming": "In Progress & Upcoming Services",
+					"provider": "Provider",
+					"recurrenceServices": "Recurrence Services",
+					"scheduleService": "Schedule Service",
+					"scheduledDate": "Scheduled Date",
+					"service": "Service",
+					"status": "Status"
+				}
+			},
+			"ownership": {
+				"addRenewalFee": "Add Renewal Fee Payment",
+				"addTenure": "Add Tenure Payment",
+				"allPaidMessage": "All required ownership fees are up to date",
+				"companyOwned": "Car registered to a company Name",
+				"companyOwnedDesc": "Tenure and renewal Fee are obligatory regardless of state rules",
+				"missingPayments": "Some required ownership fee payments are missing ( {{refYears}} Renewal Fee and {{tenureYears}} Tenure payments missing ).",
+				"renewalFee": "Renewal Fee",
+				"tenure": "Tenure",
+				"title": "Ownership Fee Status"
+			},
+			"ownershipHistory": {
+				"amount": "Amount",
+				"files": "Files",
+				"fiscalYear": "Fiscal Year",
+				"notAvailable": "N/A",
+				"paymentDate": "Payment Date",
+				"renewalFee": "RENEWAL FEE",
+				"tenure": "TENURE",
+				"title": "Payment History",
+				"type": "Type"
+			},
+			"paymentHistory": {
+				"exempt": "Exempt",
+				"noPayment": "No Payment",
+				"notPaid": "Not Paid",
+				"paid": "Paid",
+				"renewalFee": "Renewal Fee",
+				"tenure": "Tenure",
+				"title": "Payments",
+				"year": "Year"
+			},
+			"policyInformation": {
+				"attachments": "Attachments",
+				"coverageEndDate": "Coverage End Date",
+				"coverageStartDate": "Coverage Start Date",
+				"insuranceCompany": "Insurance Company",
+				"item": "Item",
+				"notAvailable": "N/A",
+				"policyIssueDate": "Policy Issue Date",
+				"policyNumber": "Policy Number",
+				"title": "Policy Information",
+				"view": "View"
+			},
+			"pollutionTest": {
+				"addVoluntaryTest": "Add Pollution Test",
+				"compliant": "Compliant",
+				"currentTest": "Pollution test is current. Expires in {{days}} days",
+				"expired": "Pollution test expired ",
+				"expiredMessage": "Pollution test has expired",
+				"expiresIn": "Pollution test expires in {{days}} days",
+				"nextTest": "Next test due: {{date}}",
+				"status": "Pollution Test Status"
+			},
+			"reminders": {
+				"labels": {
+					"additionalReminders": "Additional reminders",
+					"email": "Email notifications",
+					"halfPeriod": "At half of verification period",
+					"notificationMethod": "Notification method",
+					"remindBefore": "Remind before expiration",
+					"sms": "SMS notifications",
+					"startPeriod": "At the start of verification period"
+				},
+				"title": "Verification Reminders"
+			},
+			"vehicle": {
+				"activeBenefits": "Active Benefits",
+				"activeBenefitsDesc": "Current active benefits.",
+				"add_new_vehicle": "Add New Vehicle",
+				"alias": "Alias",
+				"assignDriver": "Assign Driver",
+				"assignFleet": "Assign Fleet",
+				"assignedDriver": "Assigned Driver",
+				"assignedDriverDesc": "Assigned driver to this vehicle.",
+				"car_type": {
+					"convertible": "Convertible",
+					"coupe": "Coupe",
+					"electric": "Electric",
+					"hatchback": "Hatchback",
+					"hybrid": "Hybrid",
+					"minivan": "Minivan",
+					"pickup": "Pickup",
+					"sedan": "Sedan",
+					"sport": "Sport",
+					"suv": "SUV",
+					"van": "Van",
+					"wagon": "Wagon"
+				},
+				"color": "Color",
+				"colors": {
+					"atomic_silver": "Atomic Silver",
+					"black": "Black",
+					"blue": "Blue",
+					"brilliant_red": "Brilliant Red",
+					"brilliant_silver": "Brilliant Silver",
+					"brilliant_white": "Brilliant White",
+					"brown": "Brown",
+					"burgundy": "Burgundy",
+					"burgundy_red": "Burgundy Red",
+					"caviar": "Caviar",
+					"ceramic_metallic": "Ceramic Metallic",
+					"champagne": "Champagne",
+					"cloudburst_gray": "Cloudburst Gray",
+					"deep_navy_blue": "Deep Navy Blue",
+					"denim_blue": "Denim Blue",
+					"glacier_white": "Glacier White",
+					"gray": "Gray",
+					"green": "Green",
+					"imperial_blue": "Imperial Blue",
+					"iron_grey": "Iron Grey",
+					"jet_black_mica": "Jet Black Mica",
+					"machine_gray_metallic": "Machine Gray Metallic",
+					"merlot_red": "Merlot Red",
+					"metallic_floret_silver": "Metallic Floret Silver",
+					"metallic_glacier_white": "Metallic Glacier White",
+					"metallic_manhattan_gray": "Metallic Manhattan Gray",
+					"metallic_myth_black": "Metallic Myth Black",
+					"metallic_nano_gray": "Metallic Nano Gray",
+					"metallic_navarra_blue": "Metallic Navarra Blue",
+					"metallic_red": "Metallic Red",
+					"meteor_gray": "Meteor Gray",
+					"nori_green": "Nori Green",
+					"orange": "Orange",
+					"oxford_gray": "Oxford Gray",
+					"pearl_white": "Pearl White",
+					"pearl_white_alt": "Pearl White",
+					"platinum_white": "Platinum White",
+					"polymetal_gray": "Polymetal Gray",
+					"polymetal_gray_metallic": "Polymetal Gray Metallic",
+					"purple": "Purple",
+					"red": "Red",
+					"rhodium_white_metallic": "Rhodium White Metallic",
+					"sapphire_blue": "Sapphire Blue",
+					"satin_white": "Satin White",
+					"silky_silver": "Silky Silver",
+					"silver": "Silver",
+					"snow_white_pearl": "Snow White Pearl",
+					"solar_orange": "Solar Orange",
+					"sonic_silver": "Sonic Silver",
+					"soul_red_crystal_metallic": "Soul Red Crystal Metallic",
+					"steel": "Steel",
+					"titanium_gray": "Titanium Gray",
+					"volcanic_gray": "Volcanic Gray",
+					"white": "White",
+					"wind_chill_pearl": "Wind Chill Pearl",
+					"yellow": "Yellow"
+				},
+				"editing": "Editing Information",
+				"editingProperties": "Editing Properties",
+				"fleetAssignments": "Fleet Assignments",
+				"fleetAssignmentsDesc": "Assigned fleet to this vehicle.",
+				"generalInfo": "General Information",
+				"leasing_company": "Leasing Company",
+				"make": "Make",
+				"model": "Model",
+				"ownership": "Ownership",
+				"plate": "Plate",
+				"price": "Price",
+				"properties": "Properties",
+				"purchase_type": "Tipo de Compra",
+				"state": "State",
+				"type": "Type",
+				"vehicle_management": "Vehicle Management",
+				"version": "Version",
+				"vin": "Vin",
+				"year": "Year"
+			},
+			"vehicleDetails": {
+				"model": "Model",
+				"tabs": {
+					"compliance": "Compliance",
+					"info": "Info",
+					"insurance": "Insurance",
+					"maintenance": "Maintenance",
+					"netO2": "Net O2",
+					"telemetry": "Telemetry"
+				},
+				"title": "Vehicle Details",
+				"year": "Year"
+			},
+			"vehicleInfo": {
+				"tabs": {
+					"details": "Details",
+					"documents": "Documents",
+					"images": "Images"
+				}
+			},
+			"vehicles": {
+				"description": "Manage your vehicle fleet and track completion status.",
+				"title": "Vehicles"
+			},
+			"vehiclesTable": {
+				"actions": "Actions",
+				"addVehicle": "Add Vehicle",
+				"alias": "Alias",
+				"complete": "Complete",
+				"export": "Export",
+				"inProcurement": "In Procurement",
+				"incomplete": "Incomplete",
+				"make": "Make",
+				"makeModel": "Make/Model",
+				"model": "Model",
+				"plateNumber": "Plate Number",
+				"searchPlaceholder": "Search vehicles...",
+				"state": "State",
+				"status": "Status",
+				"vin": "VIN",
+				"year": "Year"
+			},
+			"verificationHistory": {
+				"columns": {
+					"center": "Center",
+					"date": "Date",
+					"files": "Files",
+					"hologram": "Hologram",
+					"result": "Result",
+					"status": "Status",
+					"validUntil": "Valid Until"
+				},
+				"title": "Verification History"
+			}
+		},
+		"login": {
+			"accountPlaceholder": "Please input username",
+			"backSignIn": "Back sign in",
+			"confirmPassword": "Confirm Password",
+			"confirmPasswordPlaceholder": "Please input confirm password",
+			"diffPwd": "The two passwords are inconsistent",
+			"email": "Email",
+			"emaildPlaceholder": "Please input email",
+			"forgetFormSecondTitle": "Please enter the email address associated with your account and We will email you a link to reset your password.",
+			"forgetFormTitle": "Reset password",
+			"forgetPassword": "Forget Password?",
+			"loginButton": "Sign In",
+			"loginSuccessDesc": "Welcome back",
+			"loginSuccessTitle": "Login successful",
+			"loginWelcomeMessage": "An ecosystem around the automotive universe",
+			"logout": "Logout",
+			"mobile": "Mobile",
+			"mobilePlaceholder": "Please input mobile",
+			"mobileSignInFormTitle": "Mobile sign in",
+			"otherSignIn": "Sign in with",
+			"password": "Password",
+			"passwordPlaceholder": "Please input password",
+			"policy": "I agree to the xxx Privacy Policy",
+			"policyPlaceholder": "Register after checking",
+			"privacyPolicy": " Privacy policy ",
+			"qrSignInFormTitle": "Qr code sign in",
+			"registerAndAgree": "By signing up, I agree to",
+			"registerButton": "Sign up",
+			"rememberMe": "Remember me",
+			"scanSign": "scanning the code to complete the login",
+			"sendEmailButton": "Send Email",
+			"sendSmsButton": "Send SMS code",
+			"sendSmsText": "Reacquire in {{second}}s",
+			"signInDesc": "Enter your personal details and get started!",
+			"signInFormTitle": "Sign in",
+			"signInPrimaryTitle": "Hi, Welcome Back",
+			"signInSecondTitle": "Backstage management system",
+			"signUpFormTitle": "Sign up",
+			"smsCode": "SMS code",
+			"smsPlaceholder": "Please input sms code",
+			"termsOfService": " Terms of service ",
+			"userName": "Username"
+		},
+		"menu": {
+			"analysis": "Calendar",
+			"animate": "Animate",
+			"blank": "Blank",
+			"blog": "Blog",
+			"calendar": "Calendar",
+			"calendars": "Calendar",
+			"chart": "Chart",
+			"clipboard": "Clipboard",
+			"components": "Components",
+			"credit": {
+				"credit_lines": "Credit Lines",
+				"financial_conditions": "Financial Conditions",
+				"index": "Credit"
+			},
+			"crm": {
+				"clients": "Business User",
+				"index": "CRM",
+				"pipelines": "Pipelines"
+			},
+			"dashboard": "Home",
+			"disabled": "Item Disabled",
+			"documents": {
+				"esignature": "Esignatures",
+				"index": "Documents"
+			},
+			"editor": "Editor",
+			"error": {
+				"403": "403",
+				"404": "404",
+				"500": "500",
+				"index": "Error Page"
+			},
+			"external_link": "External Link",
+			"fleet": {
+				"compliance": "Compliance",
+				"index": "Vehicle Park",
+				"insurance": "Insurance",
+				"maintenance": "Maintenance",
+				"telemetry": "Telematics",
+				"vehicles": "Vehicles"
+			},
+			"frame": "Item External",
+			"functions": "Functions",
+			"i18n": "Multi Language",
+			"icon": "Icon",
+			"iframe": "Iframe",
+			"insights": "Insights",
+			"kanban": "Kanban",
+			"label": "Item Label",
+			"leases": {
+				"all": "All",
+				"arrears": "Arrears",
+				"due": "Due",
+				"index": "Leases",
+				"maturity": "Maturity"
+			},
+			"legal": {
+				"index": "Legal",
+				"legal_entities": "Legal Entities"
+			},
+			"management": "Management",
+			"markdown": "Markdown",
+			"menulevel": {
+				"1a": "Menu Level 1a",
+				"1b": {
+					"2a": "Menu Level 2a",
+					"2b": {
+						"3a": "Menu Level 3a",
+						"3b": "Menu Level 3b",
+						"index": "Menu Level 2b"
+					},
+					"index": "Menu Level 1b"
+				},
+				"index": "Menu Level"
+			},
+			"scroll": "Scroll",
+			"system": {
+				"index": "System",
+				"organization": "Organization",
+				"permission": "Permission",
+				"role": "Role",
+				"user": "User",
+				"user_detail": "User Detail"
+			},
+			"toast": "Toast",
+			"token_expired": "Token Expired",
+			"upload": "Upload",
+			"user": {
+				"account": "Account",
+				"index": "User",
+				"profile": "Profile"
+			},
+			"workbench": "Insights"
+		},
+		"modal": {
+			"accountExist": "The account already exists in Driverse",
+			"accountExistMsg": "In order to manage cars of this account from Autocredit, the client must authorize from Driverse.",
+			"action": {
+				"add": "Add",
+				"cancel": "Cancel",
+				"close": "Close",
+				"confirm": "Confirm",
+				"delete": "Delete",
+				"edit": "Edit",
+				"save": "Save",
+				"update": "Update"
+			},
+			"cancelMsg": "You already filled out some of the fields, if you cancel this form the information will be lost",
+			"cancelTitle": "Are you sure you want to cancel?",
+			"emailVerify": "Type the email of the client. Autocredit will verify if the account already exist in Driverse.",
+			"goBack": "Go Back",
+			"new_client": "New Client",
+			"sendRequest": "Send Request",
+			"verify": "Verify"
+		},
+		"tab": {
+			"close": "Close",
+			"closeAll": "Close All",
+			"closeLeft": "Close Left",
+			"closeOthers": "Close Others",
+			"closeRight": "Close Right",
+			"fullscreen": "FullScreen",
+			"refresh": "Refresh"
+		},
+		"uploadCompliance": {
+			"cancel": "Cancel",
+			"change": "Change",
+			"clickUpload": "Click to upload or drag and drop",
+			"fileFormats": "PDF, JPG, or PNG (max 10MB)",
+			"processDocument": "Process Document"
+		},
+		"uploadDocument": {
+			"cancel": "Cancel",
+			"change": "Change",
+			"clickUpload": "Click to upload or drag and drop",
+			"fileFormats": "PDF, JPG, or PNG (max 10MB)"
+		}
+	}
+}

@@ -1,0 +1,53 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+	"vcs": {
+		"enabled": true,
+		"clientKind": "git",
+		"useIgnoreFile": true,
+		"defaultBranch": "main"
+	},
+	"files": {
+		"ignoreUnknown": false,
+		"ignore": ["dist", "storybook-static", "coverage", "src/icons/iconify-bundle.ts"]
+	},
+	"formatter": {
+		"enabled": true,
+		"lineWidth": 120,
+		"indentStyle": "tab"
+	},
+	"organizeImports": {
+		"enabled": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"suspicious": {
+				"noExplicitAny": "off"
+			},
+			"a11y": {
+				"useKeyWithClickEvents": "off"
+			}
+		}
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "double"
+		}
+	},
+	"overrides": [
+		{
+			"include": ["src/pdf/**"],
+			"linter": {
+				"rules": {
+					"correctness": {
+						"useExhaustiveDependencies": "off"
+					},
+					"complexity": {
+						"noForEach": "off"
+					}
+				}
+			}
+		}
+	]
+}

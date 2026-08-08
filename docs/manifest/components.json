@@ -1,0 +1,4298 @@
+{
+ "generated": "2026-08-07T22:33:46.927Z",
+ "commit": "b96eda3",
+ "globals": {
+  "filesA": 710,
+  "filesB": 937,
+  "identicalFiles": 255,
+  "codeFilesA": 611,
+  "codeLocA": 55379,
+  "codeLocB": 86143,
+  "identicalCodeFiles": 177,
+  "identicalCodeLoc": 12154
+ },
+ "units": [
+  {
+   "id": "action-modal",
+   "layer": "component",
+   "a": "components/action-modal",
+   "b": "components/action-modal",
+   "tier": 1,
+   "wave": "W5",
+   "decision": "lift-as-is",
+   "target": "src/components/action-modal",
+   "notes": "Confirm/trigger modal wrapper over antd Modal.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/action-modal",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/action-modal",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 49,
+    "locB": 49,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "animate",
+   "layer": "component",
+   "a": "components/animate",
+   "b": "components/animate",
+   "tier": 0,
+   "wave": "W4",
+   "decision": "lift-as-is",
+   "target": "src/components/animate",
+   "notes": "18-file framer-motion variant suite (MotionContainer/MotionLazy/MotionViewport + 13 variant factories). Pure.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/animate",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/animate",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 17,
+    "filesB": 17,
+    "locA": 1020,
+    "locB": 1020,
+    "identicalFiles": 17,
+    "pairedFiles": 17,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "assignment-card",
+   "layer": "component",
+   "a": "components/assignment-card",
+   "b": "components/assignment-card",
+   "tier": "X",
+   "wave": "-",
+   "decision": "exclude",
+   "target": null,
+   "notes": "All 10 files diverged; deeply coupled to GraphQL queries, feature hooks, schema. Stays app-side. Note: BD's features/drivers duplicates these cards verbatim (fork-within-fork).",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/assignment-card",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/assignment-card",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 10,
+    "filesB": 10,
+    "locA": 1059,
+    "locB": 1068,
+    "identicalFiles": 1,
+    "pairedFiles": 10,
+    "diffLines": 199,
+    "status": "diverged"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "card",
+   "layer": "component",
+   "a": "components/card",
+   "b": "components/card",
+   "tier": 0,
+   "wave": "W4",
+   "decision": "lift-as-is",
+   "target": "src/components/card",
+   "notes": "Surface card styled from themeVars.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/card",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/card",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 29,
+    "locB": 29,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "chart",
+   "layer": "component",
+   "a": "components/chart",
+   "b": "components/chart",
+   "tier": 3,
+   "wave": "W6",
+   "decision": "decouple",
+   "target": "src/charts",
+   "notes": "ApexCharts wrapper + useChart option builder. useChart imports @/store/settingStore -> switch to lib useTheme(). Subpath export /charts (apexcharts optional peer).",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/chart",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/chart",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 3,
+    "filesB": 3,
+    "locA": 284,
+    "locB": 284,
+    "identicalFiles": 3,
+    "pairedFiles": 3,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "chip",
+   "layer": "component",
+   "a": "components/chip",
+   "b": "components/chip",
+   "tier": 2,
+   "wave": "W4",
+   "decision": "merge",
+   "target": "src/components/chip",
+   "notes": "Take BD's exported VARIANT_STYLES (~25 status keys, reused by pill) + QA's 3 telematics keys (moving/parked/offline). Unify label rendering (QA capitalize vs BD uppercase split-underscore). Canonical Chip absorbs Pill + StatusChip in W6.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/chip",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/chip",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 140,
+    "locB": 172,
+    "identicalFiles": 0,
+    "pairedFiles": 1,
+    "diffLines": 168,
+    "status": "diverged"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "editor",
+   "layer": "component",
+   "a": "components/editor",
+   "b": "components/editor",
+   "tier": 1,
+   "wave": "W5",
+   "decision": "lift-as-is",
+   "target": "src/editor",
+   "notes": "react-quill rich text. RISK: react-quill 2 uses findDOMNode (removed in React 19) - verify, likely swap peer to react-quill-new. Subpath /editor. Styles diff is whitespace-only.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/editor",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/editor",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 3,
+    "filesB": 3,
+    "locA": 327,
+    "locB": 327,
+    "identicalFiles": 2,
+    "pairedFiles": 3,
+    "diffLines": 2,
+    "status": "near-identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "export-button",
+   "layer": "component",
+   "a": "components/export-button",
+   "b": "components/export-button",
+   "tier": 2,
+   "wave": "W5",
+   "decision": "merge",
+   "target": "src/components/export-button",
+   "notes": "Strip BD's hardcoded feature i18n key (sys.vehiclePark.fleets.table.export); label becomes a prop.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/export-button",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/export-button",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 77,
+    "locB": 80,
+    "identicalFiles": 0,
+    "pairedFiles": 1,
+    "diffLines": 5,
+    "status": "near-identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "fallback",
+   "layer": "component",
+   "a": "components/fallback",
+   "b": "components/fallback",
+   "tier": 2,
+   "wave": "W4",
+   "decision": "adopt-B",
+   "target": "src/components/fallback",
+   "notes": "Type-only diff (description: ReactNode).",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/fallback",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/fallback",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 46,
+    "locB": 46,
+    "identicalFiles": 0,
+    "pairedFiles": 1,
+    "diffLines": 2,
+    "status": "near-identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "fleet-tracking-map",
+   "layer": "component",
+   "a": "components/fleet-tracking-map",
+   "b": "components/fleet-tracking-map",
+   "tier": "F",
+   "wave": "W8",
+   "decision": "decouple",
+   "target": "src/features/fleet-tracking-map",
+   "notes": "Map body identical; blockers (telemetry side-panel, useLocationName) ship in same wave. Offline marker color differs (#608bfb vs #9ca3af) - brand-injectable. leaflet declared peer (QA currently omits it: latent bug).",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/fleet-tracking-map",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/fleet-tracking-map",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 4,
+    "filesB": 4,
+    "locA": 440,
+    "locB": 440,
+    "identicalFiles": 2,
+    "pairedFiles": 4,
+    "diffLines": 12,
+    "status": "near-identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "icon",
+   "layer": "component",
+   "a": "components/icon",
+   "b": "components/icon",
+   "tier": 2,
+   "wave": "W3",
+   "decision": "merge",
+   "target": "src/icons",
+   "notes": "Iconify + SvgIcon + IconButton. Take BD's icon-button (disabled + rest spread). SvgIcon reimplemented over svgr map (kills vite-plugin-svg-icons host requirement). Iconify offline bundle for storybook/tests.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/icon",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/icon",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 4,
+    "filesB": 4,
+    "locA": 106,
+    "locB": 112,
+    "identicalFiles": 3,
+    "pairedFiles": 4,
+    "diffLines": 8,
+    "status": "near-identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "info-field",
+   "layer": "component",
+   "a": "components/info-field",
+   "b": "components/info-field",
+   "tier": 0,
+   "wave": "W4",
+   "decision": "lift-as-is",
+   "target": "src/components/info-field",
+   "notes": "Label/value read-only field. Pure.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/info-field",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/info-field",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 30,
+    "locB": 30,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "loading",
+   "layer": "component",
+   "a": "components/loading",
+   "b": "components/loading",
+   "tier": 2,
+   "wave": "W4",
+   "decision": "adopt-B",
+   "target": "src/components/loading",
+   "notes": "CircleLoading; only default size differs (default vs large).",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/loading",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/loading",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 3,
+    "filesB": 3,
+    "locA": 58,
+    "locB": 58,
+    "identicalFiles": 2,
+    "pairedFiles": 3,
+    "diffLines": 2,
+    "status": "near-identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "locale-picker",
+   "layer": "component",
+   "a": "components/locale-picker",
+   "b": "components/locale-picker",
+   "tier": 2,
+   "wave": "W5",
+   "decision": "merge",
+   "target": "src/components/locale-picker",
+   "notes": "QA uses sprite icons, BD hardcoded twemoji ternary (breaks 3rd locale). Merge: iconify flags driven by a locale->icon map prop.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/locale-picker",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/locale-picker",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 38,
+    "locB": 39,
+    "identicalFiles": 0,
+    "pairedFiles": 1,
+    "diffLines": 7,
+    "status": "near-identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "logo",
+   "layer": "component",
+   "a": "components/logo",
+   "b": "components/logo",
+   "tier": 3,
+   "wave": "W4",
+   "decision": "decouple",
+   "target": "src/components/logo",
+   "notes": "Brand mark; logo asset becomes brand-injected (ic_logo_nav.svg content differs per brand).",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/logo",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/logo",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 21,
+    "locB": 21,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "markdown",
+   "layer": "component",
+   "a": "components/markdown",
+   "b": "components/markdown",
+   "tier": 1,
+   "wave": "W5",
+   "decision": "lift-as-is",
+   "target": "src/components/markdown",
+   "notes": "react-markdown + remark-gfm/rehype pipeline, styled-components skin.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/markdown",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/markdown",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 2,
+    "filesB": 2,
+    "locA": 179,
+    "locB": 179,
+    "identicalFiles": 2,
+    "pairedFiles": 2,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "number-input",
+   "layer": "component",
+   "a": "components/number-input",
+   "b": "components/number-input",
+   "tier": 0,
+   "wave": "W5",
+   "decision": "lift-as-is",
+   "target": "src/components/number-input",
+   "notes": "antd Input with thousands separators. Pure.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/number-input",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/number-input",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 43,
+    "locB": 43,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "page-header",
+   "layer": "component",
+   "a": "components/page-header",
+   "b": "components/page-header",
+   "tier": 2,
+   "wave": "W5",
+   "decision": "merge",
+   "target": "src/components/page-header",
+   "notes": "BD's prop surface (goBack/fallbackRoute/showBackBtn/sticky/ReactNode description) + QA's cleanliness; drop BD's dead commented goBack impl. header.tsx is identical.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/page-header",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/page-header",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 2,
+    "filesB": 2,
+    "locA": 89,
+    "locB": 123,
+    "identicalFiles": 1,
+    "pairedFiles": 2,
+    "diffLines": 50,
+    "status": "diverged"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "pill-tabs",
+   "layer": "component",
+   "a": "components/pill-tabs",
+   "b": "components/pill-tabs",
+   "tier": 2,
+   "wave": "W5",
+   "decision": "adopt-A",
+   "target": "src/components/pill-tabs",
+   "notes": "QA retains disabled support that BD dropped (regression).",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/pill-tabs",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/pill-tabs",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 85,
+    "locB": 84,
+    "identicalFiles": 0,
+    "pairedFiles": 1,
+    "diffLines": 5,
+    "status": "near-identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "placeholder-card",
+   "layer": "component",
+   "a": "components/placeholder-card",
+   "b": "components/placeholder-card",
+   "tier": 0,
+   "wave": "W4",
+   "decision": "lift-as-is",
+   "target": "src/components/placeholder-card",
+   "notes": "Pure stub card.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/placeholder-card",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/placeholder-card",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 17,
+    "locB": 17,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "progress-bar",
+   "layer": "component",
+   "a": "components/progress-bar",
+   "b": "components/progress-bar",
+   "tier": 0,
+   "wave": "W4",
+   "decision": "lift-as-is",
+   "target": "src/components/progress-bar",
+   "notes": "NProgress route loader, vanilla-extract style.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/progress-bar",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/progress-bar",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 2,
+    "filesB": 2,
+    "locA": 68,
+    "locB": 68,
+    "identicalFiles": 2,
+    "pairedFiles": 2,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "scroll-progress",
+   "layer": "component",
+   "a": "components/scroll-progress",
+   "b": "components/scroll-progress",
+   "tier": 0,
+   "wave": "W4",
+   "decision": "lift-as-is",
+   "target": "src/components/scroll-progress",
+   "notes": "framer-motion spring scroll indicator.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/scroll-progress",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/scroll-progress",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 33,
+    "locB": 33,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "scrollbar",
+   "layer": "component",
+   "a": "components/scrollbar",
+   "b": "components/scrollbar",
+   "tier": 0,
+   "wave": "W4",
+   "decision": "lift-as-is",
+   "target": "src/components/scrollbar",
+   "notes": "simplebar-react wrapper (forwardRef). Pure.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/scrollbar",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/scrollbar",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 53,
+    "locB": 53,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "searchable-select",
+   "layer": "component",
+   "a": "components/searchable-select",
+   "b": "components/searchable-select",
+   "tier": 0,
+   "wave": "W5",
+   "decision": "lift-as-is",
+   "target": "src/components/searchable-select",
+   "notes": "antd Select with search highlight; two near-duplicate variants inside - consolidate to one during extraction.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/searchable-select",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/searchable-select",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 2,
+    "filesB": 2,
+    "locA": 140,
+    "locB": 140,
+    "identicalFiles": 2,
+    "pairedFiles": 2,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "table-tab",
+   "layer": "component",
+   "a": "components/table-tab",
+   "b": "components/table-tab",
+   "tier": 2,
+   "wave": "W5",
+   "decision": "adopt-B",
+   "target": "src/components/table-tab",
+   "notes": "BD adds w-full wrappers + whitespace-nowrap.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/table-tab",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/table-tab",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 66,
+    "locB": 66,
+    "identicalFiles": 0,
+    "pairedFiles": 1,
+    "diffLines": 6,
+    "status": "near-identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "toast",
+   "layer": "component",
+   "a": "components/toast",
+   "b": "components/toast",
+   "tier": 3,
+   "wave": "W6",
+   "decision": "decouple",
+   "target": "src/components/toast",
+   "notes": "sonner Toaster; imports @/store/settingStore -> switch to lib useTheme().",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/toast",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/toast",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 139,
+    "locB": 139,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "upload",
+   "layer": "component",
+   "a": "components/upload",
+   "b": "components/upload",
+   "tier": 2,
+   "wave": "W5",
+   "decision": "merge",
+   "target": "src/components/upload",
+   "notes": "833 LOC antd Upload suite. Only utils.ts differs: take BD (adds formatDate).",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/upload",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/upload",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 8,
+    "filesB": 8,
+    "locA": 844,
+    "locB": 853,
+    "identicalFiles": 7,
+    "pairedFiles": 8,
+    "diffLines": 9,
+    "status": "near-identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "column-details-layout",
+   "layer": "component",
+   "a": "components/column-details-layout",
+   "b": null,
+   "tier": 1,
+   "wave": "W4",
+   "decision": "adopt-A",
+   "target": "src/components/column-details-layout",
+   "notes": "QA-only. {label,value}[] -> balanced 2-col grid. Zero deps.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/column-details-layout",
+     "commit": "b96eda3"
+    },
+    "bd": null
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 0,
+    "locA": 56,
+    "locB": 0,
+    "identicalFiles": 0,
+    "pairedFiles": 0,
+    "diffLines": 0,
+    "status": "only-A"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "docx-viewer",
+   "layer": "component",
+   "a": "components/docx-viewer",
+   "b": null,
+   "tier": "X",
+   "wave": "-",
+   "decision": "exclude",
+   "target": null,
+   "notes": "QA-only; coupled to @/store/taskStore; superseded by BD's pdf-renderer + previewers.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/docx-viewer",
+     "commit": "b96eda3"
+    },
+    "bd": null
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 0,
+    "locA": 104,
+    "locB": 0,
+    "identicalFiles": 0,
+    "pairedFiles": 0,
+    "diffLines": 0,
+    "status": "only-A"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "tab",
+   "layer": "component",
+   "a": "components/tab",
+   "b": null,
+   "tier": 2,
+   "wave": "W5",
+   "decision": "adopt-A",
+   "target": "src/components/styled-tabs",
+   "notes": "QA-only StyledTabs (extract; re-point colors to token contract). open-tab.tsx stays app-side (router-coupled).",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/tab",
+     "commit": "b96eda3"
+    },
+    "bd": null
+   },
+   "metrics": {
+    "filesA": 2,
+    "filesB": 0,
+    "locA": 113,
+    "locB": 0,
+    "identicalFiles": 0,
+    "pairedFiles": 0,
+    "diffLines": 0,
+    "status": "only-A"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "data-table",
+   "layer": "component",
+   "a": "components/table",
+   "b": null,
+   "tier": 3,
+   "wave": "W6",
+   "decision": "decouple",
+   "target": "src/data-table",
+   "notes": "QA-only ag-grid wrapper currently hardcoding GET_VEHICLES + vehicle colDefs. Make prop-driven (rowData/colDefs/loading) -> THE shared DataTable. Subpath /data-table (ag-grid optional peer).",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/table",
+     "commit": "b96eda3"
+    },
+    "bd": null
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 0,
+    "locA": 71,
+    "locB": 0,
+    "identicalFiles": 0,
+    "pairedFiles": 0,
+    "diffLines": 0,
+    "status": "only-A"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "upload-option",
+   "layer": "component",
+   "a": "components/upload-option",
+   "b": null,
+   "tier": "X",
+   "wave": "-",
+   "decision": "exclude",
+   "target": null,
+   "notes": "QA-only; typed to CompliceDocsUpload feature hook. Business UI.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/components/upload-option",
+     "commit": "b96eda3"
+    },
+    "bd": null
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 0,
+    "locA": 113,
+    "locB": 0,
+    "identicalFiles": 0,
+    "pairedFiles": 0,
+    "diffLines": 0,
+    "status": "only-A"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "coming-soon",
+   "layer": "component",
+   "a": null,
+   "b": "components/coming-soon",
+   "tier": 1,
+   "wave": "W4",
+   "decision": "adopt-B",
+   "target": "src/components/coming-soon",
+   "notes": "Static placeholder card.",
+   "sources": {
+    "qa": null,
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/coming-soon",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 0,
+    "filesB": 1,
+    "locA": 0,
+    "locB": 14,
+    "identicalFiles": 0,
+    "pairedFiles": 0,
+    "diffLines": 0,
+    "status": "only-B"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "confirm-modal",
+   "layer": "component",
+   "a": null,
+   "b": "components/confirm-modal",
+   "tier": 1,
+   "wave": "W5",
+   "decision": "adopt-B",
+   "target": "src/components/confirm-modal",
+   "notes": "Generic antd confirmation dialog.",
+   "sources": {
+    "qa": null,
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/confirm-modal",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 0,
+    "filesB": 1,
+    "locA": 0,
+    "locB": 47,
+    "identicalFiles": 0,
+    "pairedFiles": 0,
+    "diffLines": 0,
+    "status": "only-B"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "document-queue-item",
+   "layer": "component",
+   "a": null,
+   "b": "components/document-queue-item",
+   "tier": "X",
+   "wave": "-",
+   "decision": "exclude",
+   "target": null,
+   "notes": "Bound to documentStore/useCheckedItemsStore + OCR domain. Inventory flags the store import as an anti-pattern.",
+   "sources": {
+    "qa": null,
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/document-queue-item",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 0,
+    "filesB": 1,
+    "locA": 0,
+    "locB": 283,
+    "identicalFiles": 0,
+    "pairedFiles": 0,
+    "diffLines": 0,
+    "status": "only-B"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "drag-drop-inbox",
+   "layer": "component",
+   "a": null,
+   "b": "components/drag-drop-inbox",
+   "tier": 1,
+   "wave": "W5",
+   "decision": "adopt-B",
+   "target": "src/components/drag-drop-inbox",
+   "notes": "Pure presentational dropzone; handlers + renderFileItem injected. Textbook reusable.",
+   "sources": {
+    "qa": null,
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/drag-drop-inbox",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 0,
+    "filesB": 1,
+    "locA": 0,
+    "locB": 92,
+    "identicalFiles": 0,
+    "pairedFiles": 0,
+    "diffLines": 0,
+    "status": "only-B"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "dynamic-form",
+   "layer": "component",
+   "a": null,
+   "b": "components/dynamic-form",
+   "tier": 4,
+   "wave": "W7",
+   "decision": "adopt-B",
+   "target": "src/components/dynamic-form",
+   "notes": "Schema-driven antd form (rhf + zod). Ships with use-dynamic-form-schema hook.",
+   "sources": {
+    "qa": null,
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/dynamic-form",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 0,
+    "filesB": 1,
+    "locA": 0,
+    "locB": 237,
+    "identicalFiles": 0,
+    "pairedFiles": 0,
+    "diffLines": 0,
+    "status": "only-B"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "file-previewer",
+   "layer": "component",
+   "a": null,
+   "b": "components/file-previewer",
+   "tier": 3,
+   "wave": "W7",
+   "decision": "decouple",
+   "target": "src/components/file-previewer",
+   "notes": "Extension dispatcher; decouple from useGetFileUrl via url/fetcher prop.",
+   "sources": {
+    "qa": null,
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/file-previewer",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 0,
+    "filesB": 1,
+    "locA": 0,
+    "locB": 76,
+    "identicalFiles": 0,
+    "pairedFiles": 0,
+    "diffLines": 0,
+    "status": "only-B"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "novu",
+   "layer": "component",
+   "a": null,
+   "b": "components/novu",
+   "tier": "X",
+   "wave": "-",
+   "decision": "exclude",
+   "target": null,
+   "notes": "Infra widget (Novu Inbox) wired to userStore/router. Driverse-reusable but not UI-library material.",
+   "sources": {
+    "qa": null,
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/novu",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 0,
+    "filesB": 1,
+    "locA": 0,
+    "locB": 72,
+    "identicalFiles": 0,
+    "pairedFiles": 0,
+    "diffLines": 0,
+    "status": "only-B"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "pdf-renderer",
+   "layer": "component",
+   "a": null,
+   "b": "components/pdf-renderer",
+   "tier": 4,
+   "wave": "W7",
+   "decision": "adopt-B",
+   "target": "src/pdf",
+   "notes": "774 LOC self-contained react-pdf viewer (zoom/paging/thumbnails). Highest-value cross-port; replaces QA's docx-viewer PDF path. Subpath /pdf (react-pdf optional peer).",
+   "sources": {
+    "qa": null,
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/pdf-renderer",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 0,
+    "filesB": 3,
+    "locA": 0,
+    "locB": 777,
+    "identicalFiles": 0,
+    "pairedFiles": 0,
+    "diffLines": 0,
+    "status": "only-B"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "pill",
+   "layer": "component",
+   "a": null,
+   "b": "components/pill",
+   "tier": 2,
+   "wave": "W4",
+   "decision": "adopt-B",
+   "target": "src/components/chip",
+   "notes": "Built on chip's exported VARIANT_STYLES; folds into canonical Chip family in W6.",
+   "sources": {
+    "qa": null,
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/pill",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 0,
+    "filesB": 1,
+    "locA": 0,
+    "locB": 26,
+    "identicalFiles": 0,
+    "pairedFiles": 0,
+    "diffLines": 0,
+    "status": "only-B"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "xlsx-viewer",
+   "layer": "component",
+   "a": null,
+   "b": "components/previewers",
+   "tier": 4,
+   "wave": "W7",
+   "decision": "adopt-B",
+   "target": "src/components/xlsx-viewer",
+   "notes": "Multi-sheet XLSX table viewer (SheetJS). Zero app coupling. xlsx optional peer.",
+   "sources": {
+    "qa": null,
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/previewers",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 0,
+    "filesB": 1,
+    "locA": 0,
+    "locB": 189,
+    "identicalFiles": 0,
+    "pairedFiles": 0,
+    "diffLines": 0,
+    "status": "only-B"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "pro-tag",
+   "layer": "component",
+   "a": null,
+   "b": "components/proTag",
+   "tier": 1,
+   "wave": "W4",
+   "decision": "adopt-B",
+   "target": "src/components/pro-tag",
+   "notes": "styled-components antd Tag restyle (upstream slash-admin).",
+   "sources": {
+    "qa": null,
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/proTag",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 0,
+    "filesB": 1,
+    "locA": 0,
+    "locB": 32,
+    "identicalFiles": 0,
+    "pairedFiles": 0,
+    "diffLines": 0,
+    "status": "only-B"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "status-chip",
+   "layer": "component",
+   "a": null,
+   "b": "components/status-chip",
+   "tier": "X",
+   "wave": "-",
+   "decision": "exclude",
+   "target": null,
+   "notes": "Redundant third status-color map; absorbed by canonical Chip.",
+   "sources": {
+    "qa": null,
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/status-chip",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 0,
+    "filesB": 1,
+    "locA": 0,
+    "locB": 20,
+    "identicalFiles": 0,
+    "pairedFiles": 0,
+    "diffLines": 0,
+    "status": "only-B"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "total-card",
+   "layer": "component",
+   "a": null,
+   "b": "components/total-card",
+   "tier": 1,
+   "wave": "W4",
+   "decision": "adopt-B",
+   "target": "src/components/total-card",
+   "notes": "KPI/stat tile with delta arrows. Pure.",
+   "sources": {
+    "qa": null,
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/components/total-card",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 0,
+    "filesB": 1,
+    "locA": 0,
+    "locB": 60,
+    "identicalFiles": 0,
+    "pairedFiles": 0,
+    "diffLines": 0,
+    "status": "only-B"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "theme-tokens",
+   "layer": "theme",
+   "a": "theme/tokens",
+   "b": "theme/tokens",
+   "tier": 0,
+   "wave": "W1",
+   "decision": "lift-as-is",
+   "target": "src/tokens",
+   "notes": "base/breakpoints/color/shadow/typography token source. Byte-identical, zero app imports.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/theme/tokens",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/theme/tokens",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 5,
+    "filesB": 5,
+    "locA": 292,
+    "locB": 292,
+    "identicalFiles": 5,
+    "pairedFiles": 5,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "theme-contract",
+   "layer": "theme",
+   "a": "theme/theme.css.ts",
+   "b": "theme/theme.css.ts",
+   "tier": 0,
+   "wave": "W1",
+   "decision": "lift-as-is",
+   "target": "src/tokens/theme.css.ts",
+   "notes": "vanilla-extract createThemeContract + createGlobalTheme(:root.light/.dark) + addColorChannels.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/theme/theme.css.ts",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/theme/theme.css.ts",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 58,
+    "locB": 58,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "theme-type",
+   "layer": "theme",
+   "a": "theme/type.ts",
+   "b": "theme/type.ts",
+   "tier": 0,
+   "wave": "W1",
+   "decision": "lift-as-is",
+   "target": "src/tokens/type.ts",
+   "notes": "200 LOC token typings incl. AddChannelToLeaf.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/theme/type.ts",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/theme/type.ts",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 201,
+    "locB": 201,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "theme-layout-css",
+   "layer": "theme",
+   "a": "theme/layout.css.ts",
+   "b": "theme/layout.css.ts",
+   "tier": 0,
+   "wave": "W1",
+   "decision": "lift-as-is",
+   "target": "src/tokens/layout.css.ts",
+   "notes": "Empty scoping class.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/theme/layout.css.ts",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/theme/layout.css.ts",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 4,
+    "locB": 4,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "brand-colors",
+   "layer": "theme",
+   "a": "theme/colors.ts",
+   "b": "theme/colors.ts",
+   "tier": 3,
+   "wave": "W1",
+   "decision": "rewrite",
+   "target": "src/tokens/brand.ts",
+   "notes": "USER DECISION: brand colors are NOT common. Becomes a brand-token CONTRACT (typed keys, neutral defaults, CSS vars); each app injects its own values via UIThemeProvider. QA and BD value sets documented as reference presets. Resolves driverse_primary_light #E1E9F5 vs #f0f7ff by design.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/theme/colors.ts",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/theme/colors.ts",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 12,
+    "locB": 7,
+    "identicalFiles": 0,
+    "pairedFiles": 1,
+    "diffLines": 18,
+    "status": "diverged"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "theme-provider",
+   "layer": "theme",
+   "a": "theme/theme-provider.tsx",
+   "b": "theme/theme-provider.tsx",
+   "tier": 3,
+   "wave": "W2",
+   "decision": "decouple",
+   "target": "src/theme/theme-provider.tsx",
+   "notes": "Becomes UIThemeProvider: controlled mode/onModeChange + brand prop; drops @/store/settingStore and #/enum deps (lib defines its own enums).",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/theme/theme-provider.tsx",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/theme/theme-provider.tsx",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 55,
+    "locB": 55,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "use-theme",
+   "layer": "theme",
+   "a": "theme/hooks/use-theme.ts",
+   "b": "theme/hooks/use-theme.ts",
+   "tier": 3,
+   "wave": "W2",
+   "decision": "decouple",
+   "target": "src/theme/use-theme.ts",
+   "notes": "Context-based; returns mode/setMode/tokens/themeVars.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/theme/hooks/use-theme.ts",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/theme/hooks/use-theme.ts",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 40,
+    "locB": 40,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "antd-adapter",
+   "layer": "theme",
+   "a": "theme/adapter/antd.adapter.tsx",
+   "b": "theme/adapter/antd.adapter.tsx",
+   "tier": 3,
+   "wave": "W2",
+   "decision": "decouple",
+   "target": "src/theme/antd-adapter.tsx",
+   "notes": "Identical in both; moves INTO lib so apps stop maintaining copies. colorPrimary from injected brand tokens. Needs @ant-design/v5-patch-for-react-19 in tests/storybook.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/theme/adapter/antd.adapter.tsx",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/theme/adapter/antd.adapter.tsx",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 86,
+    "locB": 86,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "tailwind-preset",
+   "layer": "theme",
+   "a": "../tailwind.config.ts",
+   "b": "../tailwind.config.ts",
+   "tier": 2,
+   "wave": "W1",
+   "decision": "merge",
+   "target": "src/tailwind/preset.ts",
+   "notes": "CSS-var-driven palette -> shareable preset. QA's 4 driverse_* color keys move to brand contract. Consumers add preset + node_modules content glob.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "tailwind.config.ts",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "tailwind.config.ts",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 84,
+    "locB": 77,
+    "identicalFiles": 0,
+    "pairedFiles": 1,
+    "diffLines": 11,
+    "status": "diverged"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "multi-tabs-dnd",
+   "layer": "layout",
+   "a": "layouts/dashboard/multi-tabs",
+   "b": "layouts/dashboard/multi-tabs",
+   "tier": "F",
+   "wave": "W8",
+   "decision": "decouple",
+   "target": "src/features/multi-tabs",
+   "notes": "Extracted W8. dnd-kit sortable suite; sortable-container/sortable-item/tab-item identical. Only real A/B fork was use-tab-label-render (QA read @/_mock/assets' USER_LIST in production code; BD had already stripped it - adopted-B). Router coupling became the MultiTabsNavigation interface ({push, currentRouteMeta, homePath, maxTabs}); settingStore -> layout prop; #/enum and #/router types redeclared; ramda inlined; react-i18next -> injected translate with English fallbacks. Fixed a listener leak both apps had (mouseenter/mouseleave were never removed).",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/layouts/dashboard/multi-tabs",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/layouts/dashboard/multi-tabs",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 9,
+    "filesB": 9,
+    "locA": 660,
+    "locB": 658,
+    "identicalFiles": 6,
+    "pairedFiles": 9,
+    "diffLines": 9,
+    "status": "near-identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "header-simple",
+   "layer": "layout",
+   "a": "layouts/components/header-simple.tsx",
+   "b": "layouts/components/header-simple.tsx",
+   "tier": 1,
+   "wave": "W8",
+   "decision": "lift-as-is",
+   "target": "src/components/header-simple",
+   "notes": "Logo-only header. Pure.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/layouts/components/header-simple.tsx",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/layouts/components/header-simple.tsx",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 13,
+    "locB": 13,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "dashboard-config",
+   "layer": "layout",
+   "a": "layouts/dashboard/config.ts",
+   "b": "layouts/dashboard/config.ts",
+   "tier": 0,
+   "wave": "W8",
+   "decision": "lift-as-is",
+   "target": "src/tokens/layout-constants.ts",
+   "notes": "HEADER_HEIGHT/NAV_WIDTH constants.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/layouts/dashboard/config.ts",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/layouts/dashboard/config.ts",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 7,
+    "locB": 7,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "setting-button",
+   "layer": "layout",
+   "a": "layouts/components/setting-button.tsx",
+   "b": "layouts/components/setting-button.tsx",
+   "tier": "X",
+   "wave": "-",
+   "decision": "defer",
+   "target": null,
+   "notes": "475 LOC settings drawer, identical, but couples settingStore; extract later if apps want it shared.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/layouts/components/setting-button.tsx",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/layouts/components/setting-button.tsx",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 476,
+    "locB": 476,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "search-bar",
+   "layer": "layout",
+   "a": "layouts/components/search-bar.tsx",
+   "b": "layouts/components/search-bar.tsx",
+   "tier": "X",
+   "wave": "-",
+   "decision": "defer",
+   "target": null,
+   "notes": "Cmd-K route search; router-coupled. Defer.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/layouts/components/search-bar.tsx",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/layouts/components/search-bar.tsx",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 254,
+    "locB": 254,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "notice",
+   "layer": "layout",
+   "a": "layouts/components/notice.tsx",
+   "b": "layouts/components/notice.tsx",
+   "tier": "X",
+   "wave": "-",
+   "decision": "exclude",
+   "target": null,
+   "notes": "Uses @faker-js/faker mock data in production code (flagged). BD replaced with Novu. Not extractable as-is.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/layouts/components/notice.tsx",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/layouts/components/notice.tsx",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 259,
+    "locB": 259,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "bread-crumb",
+   "layer": "layout",
+   "a": "layouts/components/bread-crumb.tsx",
+   "b": "layouts/components/bread-crumb.tsx",
+   "tier": "X",
+   "wave": "-",
+   "decision": "defer",
+   "target": null,
+   "notes": "Router-coupled; defer.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/layouts/components/bread-crumb.tsx",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/layouts/components/bread-crumb.tsx",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 55,
+    "locB": 55,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "nav-shell",
+   "layer": "layout",
+   "a": "layouts/dashboard",
+   "b": "layouts/dashboard",
+   "tier": "X",
+   "wave": "-",
+   "decision": "exclude",
+   "target": null,
+   "notes": "dashboard/index.tsx = two divergent auth bootstraps (QA keycloak+mock-RBAC vs BD flagsmith+permissionStore+client gate). nav-logo tenant branches (Lilly/autlan string matching) replaced by brand config app-side. account-dropdown auth-coupled.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/layouts/dashboard",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/layouts/dashboard",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 17,
+    "filesB": 17,
+    "locA": 1287,
+    "locB": 1344,
+    "identicalFiles": 8,
+    "pairedFiles": 17,
+    "diffLines": 612,
+    "status": "diverged"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "use-media-query",
+   "layer": "hook",
+   "a": "hooks/web/use-media-query.ts",
+   "b": "hooks/web/use-media-query.ts",
+   "tier": 0,
+   "wave": "W4",
+   "decision": "lift-as-is",
+   "target": "src/hooks/use-media-query.ts",
+   "notes": "Byte-identical.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/hooks/web/use-media-query.ts",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/hooks/web/use-media-query.ts",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 129,
+    "locB": 129,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "use-copy-to-clipboard",
+   "layer": "hook",
+   "a": "hooks/event/use-copy-to-clipboard.ts",
+   "b": "hooks/event/use-copy-to-clipboard.ts",
+   "tier": 0,
+   "wave": "W4",
+   "decision": "lift-as-is",
+   "target": "src/hooks/use-copy-to-clipboard.ts",
+   "notes": "Byte-identical.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/hooks/event/use-copy-to-clipboard.ts",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/hooks/event/use-copy-to-clipboard.ts",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 39,
+    "locB": 39,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "use-debounce",
+   "layer": "hook",
+   "a": "utils/useDebounce.tsx",
+   "b": "hooks/web/use-debounce.tsx",
+   "tier": 0,
+   "wave": "W4",
+   "decision": "lift-as-is",
+   "target": "src/hooks/use-debounce.ts",
+   "notes": "Byte-identical content at mismatched paths (QA misfiled under utils/).",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/utils/useDebounce.tsx",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/hooks/web/use-debounce.tsx",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 19,
+    "locB": 19,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "use-export",
+   "layer": "hook",
+   "a": "hooks/web/use-export.tsx",
+   "b": "hooks/web/use-export.tsx",
+   "tier": 0,
+   "wave": "W4",
+   "decision": "lift-as-is",
+   "target": "src/hooks/use-export.ts",
+   "notes": "Byte-identical.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/hooks/web/use-export.tsx",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/hooks/web/use-export.tsx",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 82,
+    "locB": 82,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "use-delete-file",
+   "layer": "hook",
+   "a": "hooks/web/use-delete-file.ts",
+   "b": "hooks/web/use-delete-file.ts",
+   "tier": 0,
+   "wave": "W4",
+   "decision": "lift-as-is",
+   "target": "src/hooks/use-delete-file.ts",
+   "notes": "Byte-identical. BD's use-deletefile.tsx duplicate excluded.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/hooks/web/use-delete-file.ts",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/hooks/web/use-delete-file.ts",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 70,
+    "locB": 70,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "use-get-fileurl",
+   "layer": "hook",
+   "a": "hooks/web/use-get-fileurl.tsx",
+   "b": "hooks/web/use-get-fileurl.tsx",
+   "tier": 0,
+   "wave": "W4",
+   "decision": "lift-as-is",
+   "target": "src/hooks/use-get-fileurl.ts",
+   "notes": "Byte-identical. BD's use-get-file-url.tsx duplicate excluded.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/hooks/web/use-get-fileurl.tsx",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/hooks/web/use-get-fileurl.tsx",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 33,
+    "locB": 33,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "use-clientId",
+   "layer": "hook",
+   "a": "hooks/web/use-clientId.tsx",
+   "b": "hooks/web/use-clientId.tsx",
+   "tier": 0,
+   "wave": "W4",
+   "decision": "lift-as-is",
+   "target": "src/hooks/use-client-id.ts",
+   "notes": "Keycloak JWT claim reader. Byte-identical.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/hooks/web/use-clientId.tsx",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/hooks/web/use-clientId.tsx",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 25,
+    "locB": 25,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "use-uploadfile",
+   "layer": "hook",
+   "a": "hooks/web/use-uploadfile.tsx",
+   "b": "hooks/web/use-uploadfile.tsx",
+   "tier": 2,
+   "wave": "W4",
+   "decision": "merge",
+   "target": "src/hooks/use-upload-file.ts",
+   "notes": "14-line diff; owns FILE_BASE_API - make base URL injectable.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/hooks/web/use-uploadfile.tsx",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/hooks/web/use-uploadfile.tsx",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 210,
+    "locB": 211,
+    "identicalFiles": 0,
+    "pairedFiles": 1,
+    "diffLines": 7,
+    "status": "near-identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "use-resource",
+   "layer": "hook",
+   "a": "hooks/web/use-resource.tsx",
+   "b": "hooks/web/use-resource.tsx",
+   "tier": 1,
+   "wave": "W4",
+   "decision": "lift-as-is",
+   "target": "src/hooks/use-resource.ts",
+   "notes": "Formatting-only diff.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/hooks/web/use-resource.tsx",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/hooks/web/use-resource.tsx",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 38,
+    "locB": 33,
+    "identicalFiles": 0,
+    "pairedFiles": 1,
+    "diffLines": 34,
+    "status": "diverged"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "use-tenant-id",
+   "layer": "hook",
+   "a": "hooks/useGetTenantId.tsx",
+   "b": "hooks/web/use-tenantId.tsx",
+   "tier": 1,
+   "wave": "W4",
+   "decision": "lift-as-is",
+   "target": "src/hooks/use-tenant-id.ts",
+   "notes": "Same logic, different paths/formatting.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/hooks/useGetTenantId.tsx",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/hooks/web/use-tenantId.tsx",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 21,
+    "locB": 25,
+    "identicalFiles": 0,
+    "pairedFiles": 1,
+    "diffLines": 15,
+    "status": "diverged"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "use-query-params",
+   "layer": "hook",
+   "a": "hooks/event/useQueryParams.ts",
+   "b": "hooks/web/use-query-params.tsx",
+   "tier": 3,
+   "wave": "W6",
+   "decision": "rewrite",
+   "target": "src/hooks/use-query-params.ts",
+   "notes": "Two incompatible APIs (QA createQueryString/setQueryParams vs BD getQueryParam/setQueryParam). Design a union API; apps migrate via codemod.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/hooks/event/useQueryParams.ts",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/hooks/web/use-query-params.tsx",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 29,
+    "locB": 23,
+    "identicalFiles": 0,
+    "pairedFiles": 1,
+    "diffLines": 33,
+    "status": "diverged"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "use-permission",
+   "layer": "hook",
+   "a": "hooks/web/use-permission.ts",
+   "b": null,
+   "tier": 1,
+   "wave": "W6",
+   "decision": "adopt-A",
+   "target": "src/hooks/use-permission.ts",
+   "notes": "Cleanest RBAC primitive (has/hasAny/hasAll/getAll over Set). BD's use-user-permissions.ts is broken (bodies commented out, returns undefined) - excluded.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/hooks/web/use-permission.ts",
+     "commit": "b96eda3"
+    },
+    "bd": null
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 0,
+    "locA": 43,
+    "locB": 0,
+    "identicalFiles": 0,
+    "pairedFiles": 0,
+    "diffLines": 0,
+    "status": "only-A"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "use-dynamic-form-schema",
+   "layer": "hook",
+   "a": null,
+   "b": "hooks/web/use-dynamic-form-schema.tsx",
+   "tier": 4,
+   "wave": "W7",
+   "decision": "adopt-B",
+   "target": "src/hooks/use-dynamic-form-schema.ts",
+   "notes": "zod schema builder pairing dynamic-form.",
+   "sources": {
+    "qa": null,
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/hooks/web/use-dynamic-form-schema.tsx",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 0,
+    "filesB": 1,
+    "locA": 0,
+    "locB": 76,
+    "identicalFiles": 0,
+    "pairedFiles": 0,
+    "diffLines": 0,
+    "status": "only-B"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "use-feature-flag",
+   "layer": "hook",
+   "a": null,
+   "b": "hooks/web/use-feature-flag.tsx",
+   "tier": "X",
+   "wave": "-",
+   "decision": "defer",
+   "target": null,
+   "notes": "Env-var flag reader; app infra, not UI.",
+   "sources": {
+    "qa": null,
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/hooks/web/use-feature-flag.tsx",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 0,
+    "filesB": 1,
+    "locA": 0,
+    "locB": 72,
+    "identicalFiles": 0,
+    "pairedFiles": 0,
+    "diffLines": 0,
+    "status": "only-B"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "use-update-filename",
+   "layer": "hook",
+   "a": null,
+   "b": "hooks/web/use-update-filename.tsx",
+   "tier": "X",
+   "wave": "-",
+   "decision": "defer",
+   "target": null,
+   "notes": "File-service mutation; API-coupled.",
+   "sources": {
+    "qa": null,
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/hooks/web/use-update-filename.tsx",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 0,
+    "filesB": 1,
+    "locA": 0,
+    "locB": 42,
+    "identicalFiles": 0,
+    "pairedFiles": 0,
+    "diffLines": 0,
+    "status": "only-B"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "use-lilly",
+   "layer": "hook",
+   "a": null,
+   "b": "hooks/web/use-lilly.ts",
+   "tier": "X",
+   "wave": "-",
+   "decision": "exclude",
+   "target": null,
+   "notes": "Tenant hardcode (clientName.includes('Lilly')). Must not enter the lib; replaced by brand config.",
+   "sources": {
+    "qa": null,
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/hooks/web/use-lilly.ts",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 0,
+    "filesB": 1,
+    "locA": 0,
+    "locB": 30,
+    "identicalFiles": 0,
+    "pairedFiles": 0,
+    "diffLines": 0,
+    "status": "only-B"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "util-highlight",
+   "layer": "util",
+   "a": "utils/highlight.ts",
+   "b": "utils/highlight.ts",
+   "tier": 0,
+   "wave": "W4",
+   "decision": "lift-as-is",
+   "target": "src/utils/highlight.ts",
+   "notes": "Byte-identical.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/utils/highlight.ts",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/utils/highlight.ts",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 20,
+    "locB": 20,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "util-storage",
+   "layer": "util",
+   "a": "utils/storage.ts",
+   "b": "utils/storage.ts",
+   "tier": 0,
+   "wave": "W4",
+   "decision": "lift-as-is",
+   "target": "src/utils/storage.ts",
+   "notes": "Byte-identical.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/utils/storage.ts",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/utils/storage.ts",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 29,
+    "locB": 29,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "util-tree",
+   "layer": "util",
+   "a": "utils/tree.ts",
+   "b": "utils/tree.ts",
+   "tier": 0,
+   "wave": "W4",
+   "decision": "lift-as-is",
+   "target": "src/utils/tree.ts",
+   "notes": "Byte-identical.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/utils/tree.ts",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/utils/tree.ts",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 16,
+    "locB": 16,
+    "identicalFiles": 1,
+    "pairedFiles": 1,
+    "diffLines": 0,
+    "status": "identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "util-theme",
+   "layer": "util",
+   "a": "utils/theme.ts",
+   "b": "utils/theme.ts",
+   "tier": 1,
+   "wave": "W1",
+   "decision": "lift-as-is",
+   "target": "src/tokens/css-var-utils.ts",
+   "notes": "Comment-only diff. toCssVar/toCssVars/rgbAlpha/hexToRgbChannel/removePx - the tailwind<->vanilla-extract bridge.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/utils/theme.ts",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/utils/theme.ts",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 151,
+    "locB": 151,
+    "identicalFiles": 0,
+    "pairedFiles": 1,
+    "diffLines": 10,
+    "status": "near-identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "util-docs-download",
+   "layer": "util",
+   "a": "utils/docs-download.ts",
+   "b": "utils/docs-download.ts",
+   "tier": 1,
+   "wave": "W4",
+   "decision": "lift-as-is",
+   "target": "src/utils/docs-download.ts",
+   "notes": "Comment-only diff.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/utils/docs-download.ts",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/utils/docs-download.ts",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 148,
+    "locB": 148,
+    "identicalFiles": 0,
+    "pairedFiles": 1,
+    "diffLines": 4,
+    "status": "near-identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "util-capitalize",
+   "layer": "util",
+   "a": "utils/capitalize.ts",
+   "b": "utils/capitalize.ts",
+   "tier": 2,
+   "wave": "W4",
+   "decision": "adopt-B",
+   "target": "src/utils/capitalize.ts",
+   "notes": "BD strictly better (null-guard + underscore normalization).",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/utils/capitalize.ts",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/utils/capitalize.ts",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 7,
+    "locB": 10,
+    "identicalFiles": 0,
+    "pairedFiles": 1,
+    "diffLines": 10,
+    "status": "near-identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "util-format-number",
+   "layer": "util",
+   "a": "utils/format-number.ts",
+   "b": "utils/format-number.ts",
+   "tier": 2,
+   "wave": "W4",
+   "decision": "merge",
+   "target": "src/utils/format-number.ts",
+   "notes": "Take QA's formatAmountWithCurrency (18-symbol map) + BD's formatNumberWithCommas; drop BD's 1-line getCurrencySymbol hack.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/utils/format-number.ts",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/utils/format-number.ts",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 105,
+    "locB": 105,
+    "identicalFiles": 0,
+    "pairedFiles": 1,
+    "diffLines": 69,
+    "status": "diverged"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "util-time",
+   "layer": "util",
+   "a": "utils/time.ts",
+   "b": "utils/time.ts",
+   "tier": 2,
+   "wave": "W4",
+   "decision": "merge",
+   "target": "src/utils/time.ts",
+   "notes": "Union merges cleanly: QA adds formatTimeInHr, BD adds generateYearOptions; rest is reordering.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/utils/time.ts",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/utils/time.ts",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 175,
+    "locB": 175,
+    "identicalFiles": 0,
+    "pairedFiles": 1,
+    "diffLines": 129,
+    "status": "diverged"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "util-index",
+   "layer": "util",
+   "a": "utils/index.ts",
+   "b": "utils/index.ts",
+   "tier": 3,
+   "wave": "W6",
+   "decision": "merge",
+   "target": "src/utils/misc.ts",
+   "notes": "Biggest utility fork (358 diff lines). Shared: normalize/wait/cn/calculateBearing/getExtensionFromContentType. Union BD's formatters + CSV helpers + QA's extras. Resolve MovementStatus/OverallComplianceStatus type location (#/entity in QA vs @/utils in BD) into lib types.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/utils/index.ts",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/utils/index.ts",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 326,
+    "locB": 490,
+    "identicalFiles": 0,
+    "pairedFiles": 1,
+    "diffLines": 315,
+    "status": "diverged"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "util-permission-tree",
+   "layer": "util",
+   "a": null,
+   "b": "utils/permission-tree.ts",
+   "tier": 1,
+   "wave": "W6",
+   "decision": "adopt-B",
+   "target": "src/utils/permission-tree.ts",
+   "notes": "RBAC tree builder pairing use-permission.",
+   "sources": {
+    "qa": null,
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/utils/permission-tree.ts",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 0,
+    "filesB": 1,
+    "locA": 0,
+    "locB": 160,
+    "identicalFiles": 0,
+    "pairedFiles": 0,
+    "diffLines": 0,
+    "status": "only-B"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "lib-apollo",
+   "layer": "lib",
+   "a": "lib/apollo",
+   "b": "lib/apollo",
+   "tier": "X",
+   "wave": "-",
+   "decision": "defer",
+   "target": null,
+   "notes": "index identical, config formatting-only (WS split link, Hasura roles, token refresh). Infra not UI - candidate for a future @driverse/net package.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/lib/apollo",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/lib/apollo",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 2,
+    "filesB": 2,
+    "locA": 91,
+    "locB": 90,
+    "identicalFiles": 1,
+    "pairedFiles": 2,
+    "diffLines": 29,
+    "status": "diverged"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "lib-keycloak",
+   "layer": "lib",
+   "a": "lib/keycloak",
+   "b": "lib/keycloak",
+   "tier": "X",
+   "wave": "-",
+   "decision": "defer",
+   "target": null,
+   "notes": "Indentation-only diff. Infra, defer.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/lib/keycloak",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/lib/keycloak",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 14,
+    "locB": 14,
+    "identicalFiles": 0,
+    "pairedFiles": 1,
+    "diffLines": 6,
+    "status": "near-identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "feat-telemetry",
+   "layer": "feature",
+   "a": "features/vehicle-park/vehicles/details/telemetry",
+   "b": "features/vehicle-parks/vehicles/details/telemetry",
+   "tier": "F",
+   "wave": "W8",
+   "decision": "merge",
+   "target": "src/features/telemetry",
+   "notes": "USER DIRECTIVE. Extracted W8. 26/44 files byte-identical; diffs are formatting plus three one-line additions where BD is the fuller side (adopted-B throughout). CORRECTION to the earlier analysis: tracking-gps/live-map/PlaybackControls.tsx is NOT rewritten across repos - QA's 93 lines and BD's 174 are the same component under different prettier settings. The real fork is WITHIN each app, between the gps and tracking-gps copies, and the gps copy is dead code in both. Shipped as one shared PlaybackControls (tracking-gps base + gps's onExit/skip/timestamp readout as optional props). gps/ and tracking-gps/ are two views, not duplicates: 12 of their 17 files were identical and now live once in shared/ (868 LOC vs 1,699 duplicated in BD alone). GraphQL/REST/env transport is the injected TelemetryDataSource; react-router useParams became an injected vehicleId.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/features/vehicle-park/vehicles/details/telemetry",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/features/vehicle-parks/vehicles/details/telemetry",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 37,
+    "filesB": 37,
+    "locA": 3272,
+    "locB": 3365,
+    "identicalFiles": 26,
+    "pairedFiles": 37,
+    "diffLines": 198,
+    "status": "diverged"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "feat-telemetry-page",
+   "layer": "feature",
+   "a": "features/vehicle-park/telemetry",
+   "b": "features/vehicle-parks/telemetry",
+   "tier": "F",
+   "wave": "W8",
+   "decision": "merge",
+   "target": "src/features/telemetry",
+   "notes": "Park-level telemetry page wrapper (1-line diff).",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/features/vehicle-park/telemetry",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/features/vehicle-parks/telemetry",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 1,
+    "filesB": 1,
+    "locA": 49,
+    "locB": 50,
+    "identicalFiles": 0,
+    "pairedFiles": 1,
+    "diffLines": 1,
+    "status": "near-identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "feat-insight-charts",
+   "layer": "feature",
+   "a": "features/insight/components/charts",
+   "b": "features/insight/charts",
+   "tier": "F",
+   "wave": "W8",
+   "decision": "merge",
+   "target": "src/charts/insight",
+   "notes": "Same 6 charts hidden by dir rename; 4 byte-identical (weekly-activity, fleet-utilization, recent-alerts, maintenance).",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/features/insight/components/charts",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/features/insight/charts",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 6,
+    "filesB": 6,
+    "locA": 803,
+    "locB": 704,
+    "identicalFiles": 4,
+    "pairedFiles": 6,
+    "diffLines": 129,
+    "status": "diverged"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "feat-maintenance-charts",
+   "layer": "feature",
+   "a": null,
+   "b": "features/vehicle-parks/maintenance/components/charts",
+   "tier": "F",
+   "wave": "W6",
+   "decision": "adopt-B",
+   "target": "src/charts",
+   "notes": "7 generic chart wrappers (cost-over-time, issues-by-priority, monthly-cost, services-by-status/type, services-donut, top-vehicles) + count-badge/status-badge/stat-cards. Chart-library seed.",
+   "sources": {
+    "qa": null,
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/features/vehicle-parks/maintenance/components/charts",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 0,
+    "filesB": 7,
+    "locA": 0,
+    "locB": 521,
+    "identicalFiles": 0,
+    "pairedFiles": 0,
+    "diffLines": 0,
+    "status": "only-B"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "i18n-base",
+   "layer": "feature",
+   "a": "locales/lang",
+   "b": "locales/lang",
+   "tier": 4,
+   "wave": "W7",
+   "decision": "merge",
+   "target": "src/i18n",
+   "notes": "541-key shared base bundle (en_US/es_ES) nearly conflict-free (29 value conflicts); per-app overlays keep the 36 QA-only + 638 BD-only keys. Note: 98% of shared components hardcode strings - externalization is opt-in per component, not a blocker.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/locales/lang",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/locales/lang",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 9,
+    "filesB": 6,
+    "locA": 1939,
+    "locB": 3321,
+    "identicalFiles": 4,
+    "pairedFiles": 6,
+    "diffLines": 2280,
+    "status": "diverged"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "feat-document-inbox",
+   "layer": "feature",
+   "a": "features/documents/document-inbox",
+   "b": "features/documents/document-inbox",
+   "tier": "F",
+   "wave": "W8",
+   "decision": "merge",
+   "target": "src/features/document-inbox",
+   "notes": "Full document-inbox module: components 2,225 LOC with only ~20 diff lines; hooks 1,310 LOC with ~25 diff lines - near-identical at scale. QA-only select-client tab stays app-side. Store deps (documentStore) become injected interfaces.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/features/documents/document-inbox",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/features/documents/document-inbox",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 29,
+    "filesB": 28,
+    "locA": 3636,
+    "locB": 3537,
+    "identicalFiles": 12,
+    "pairedFiles": 28,
+    "diffLines": 86,
+    "status": "near-identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "feat-vehicle-insurance",
+   "layer": "feature",
+   "a": "features/vehicle-park/vehicles/details/insurance",
+   "b": "features/vehicle-parks/vehicles/details/insurance",
+   "tier": "F",
+   "wave": "W8",
+   "decision": "merge",
+   "target": "src/features/vehicle-insurance",
+   "notes": "Insurance detail module (~1,670 LOC): overview 101 diff lines/1,333 LOC, edit 39/256, history 2/27, index identical. Near-identical; GraphQL imports injected.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/features/vehicle-park/vehicles/details/insurance",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/features/vehicle-parks/vehicles/details/insurance",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 14,
+    "filesB": 14,
+    "locA": 1669,
+    "locB": 1701,
+    "identicalFiles": 3,
+    "pairedFiles": 14,
+    "diffLines": 142,
+    "status": "diverged"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "feat-vehicle-compliance",
+   "layer": "feature",
+   "a": "features/vehicle-park/vehicles/details/compliance",
+   "b": "features/vehicle-parks/vehicles/details/compliance",
+   "tier": "F",
+   "wave": "W8",
+   "decision": "merge",
+   "target": "src/features/vehicle-compliance",
+   "notes": "PARTIAL extraction in W8, by design. The three structurally-identical sub-trees (circulation/tenure/verification) were consolidated into one parameterized compliance-table (ComplianceStatusCard/DocumentCard/HistoryTable/AdditionalInfo + ComplianceDocumentSection) driven by per-kind config hooks - ~2,279 LOC of status/current/history/data collapsed to 1,939 LOC across 15 files. 34 files / 3,712 LOC left UNPORTED: the create/edit forms and their BD-only mutation hooks, each with its own zod schema, its own mutation and file-upload state machines bound to four app stores. That is real behavioural divergence, not formatting. VehicleComplianceDataSource already declares the contract those forms need, and the ported configs expose render-prop holes (onEditCurrentCard/onEditLatest/onEditHistoryRow) so a follow-up pass has a stable target. reminders.tsx in all three kinds is additionally dead code upstream.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/features/vehicle-park/vehicles/details/compliance",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/features/vehicle-parks/vehicles/details/compliance",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 46,
+    "filesB": 57,
+    "locA": 5024,
+    "locB": 6123,
+    "identicalFiles": 8,
+    "pairedFiles": 46,
+    "diffLines": 1103,
+    "status": "diverged"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "pages-error",
+   "layer": "feature",
+   "a": "pages/sys/error",
+   "b": "pages/sys/error",
+   "tier": 1,
+   "wave": "W5",
+   "decision": "merge",
+   "target": "src/components/error-pages",
+   "notes": "Page403/404/500 identical (animate-based, pure); PageError: BD implemented it, QA is a stub - take BD.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/pages/sys/error",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/pages/sys/error",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 4,
+    "filesB": 4,
+    "locA": 151,
+    "locB": 240,
+    "identicalFiles": 3,
+    "pairedFiles": 4,
+    "diffLines": 107,
+    "status": "diverged"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "pages-demo-gallery",
+   "layer": "feature",
+   "a": "pages/components",
+   "b": "pages/components",
+   "tier": "X",
+   "wave": "-",
+   "decision": "repurpose",
+   "target": null,
+   "notes": "Upstream template demo pages: chart demos 13 files/651 LOC 100% identical, scroll demos 100% identical. Not shipped as lib code - repurpose their content as Storybook stories for /charts and animate in W6.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/pages/components",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/pages/components",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 33,
+    "filesB": 22,
+    "locA": 1855,
+    "locB": 1312,
+    "identicalFiles": 22,
+    "pairedFiles": 22,
+    "diffLines": 0,
+    "status": "near-identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "pages-app-shared",
+   "layer": "feature",
+   "a": "pages",
+   "b": "pages",
+   "tier": "X",
+   "wave": "-",
+   "decision": "defer",
+   "target": null,
+   "notes": "Near-identical app pages tracked for a later pass: sys/others calendar+kanban (1,771 LOC, 10 diff lines), management/user (1,093 LOC, 30 diff), management/system (932 LOC, 56 diff). Page-level (router/store-coupled) - defer until the component library lands, then apps converge naturally.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/pages",
+     "commit": "b96eda3"
+    },
+    "bd": {
+     "repo": "spike_Driverse_FE_Business-dev",
+     "path": "src/pages",
+     "commit": "b96eda3"
+    }
+   },
+   "metrics": {
+    "filesA": 139,
+    "filesB": 114,
+    "locA": 8335,
+    "locB": 6371,
+    "identicalFiles": 52,
+    "pairedFiles": 69,
+    "diffLines": 345,
+    "status": "near-identical"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  },
+  {
+   "id": "deprecated-tel",
+   "layer": "feature",
+   "a": "features/vehicle-park/vehicles/details/deprecated-tel",
+   "b": null,
+   "tier": "X",
+   "wave": "-",
+   "decision": "exclude",
+   "target": null,
+   "notes": "QA-only dead code (1,265 LOC, superseded by telemetry). Recommend deletion in QA.",
+   "sources": {
+    "qa": {
+     "repo": "spike_Driverse_FE_Autocredit-qa",
+     "path": "src/features/vehicle-park/vehicles/details/deprecated-tel",
+     "commit": "b96eda3"
+    },
+    "bd": null
+   },
+   "metrics": {
+    "filesA": 6,
+    "filesB": 0,
+    "locA": 1265,
+    "locB": 0,
+    "identicalFiles": 0,
+    "pairedFiles": 0,
+    "diffLines": 0,
+    "status": "only-A"
+   },
+   "extraction": {
+    "status": "planned",
+    "story": null,
+    "tests": {
+     "smoke": false,
+     "snapshot": false,
+     "interaction": false,
+     "a11y": false
+    }
+   }
+  }
+ ]
+}
